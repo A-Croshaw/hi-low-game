@@ -4,7 +4,8 @@
     margin:0;
     padding:0;
 }
-body {
+
+body{
     flex:100%;    
     flex-direction: column;
     background-color: rgba(56, 217, 245, 0.219);
@@ -15,17 +16,18 @@ body {
     align-items: center;
 }
 
- .box{
+.box{
     display: flex;    
     flex-wrap: wrap;
     justify-content: center;
- }
+}
  
  /*--Main Game Board Section--*/
 
-.game-board {
+.game-board{
     flex-direction: column;
     background-color: #61bdfa;
+    background-image: url(/assets/images/Game-Area-Image.jpg);
     max-width: 500px;
     min-height: 300px;
     padding: 10px;
@@ -37,7 +39,9 @@ body {
   flex-direction: row;
   justify-content: space-around;
   padding: 5px;
+  margin-top: 5px;
 }
+
 .score p{
   min-width: 90px;
   text-align: left;
@@ -46,45 +50,77 @@ body {
   font-weight: 800;
 }
 
-#text-area {
+#text-area{
   justify-content: center;
   padding: 2px;
 
 }
+
 #game-text{
   font-size: 18px;
   font-weight: 600;
+  margin-top: 5px;
 }
 
 #game-text, .score p{
   background-color: rgba(255, 238, 0, 0.699);
   padding: 2px 6px;
   min-width: 90px;
-  border-radius: 20px ;
-
+  border-radius: 20px;
 }
+
 /*--Card Area and Card Styling--*/
 
 .card-placement-area {
-  
     margin: 0;
     flex:100%;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     gap: 5px;
-    cursor: pointer;
     padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
-  .cardback{
+.cardback{
     width:85px;
     height: 135px;    
-    border-radius: 10px;
+    border-radius: 10px;    
+    background-image: url(/assets/images/Back-of-Card-Image.jpg);
+}
+
+
+.start-btn, .restart-btn, .hi-btn, .low-btn, .cardback{
     border: 1px  solid #faf761;
-  }
-
+}
   /*--Game Buttons--*/
- 
 
+.start-btn, .restart-btn, .hi-btn, .low-btn{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: rgb(255, 230, 0);
+    cursor: pointer;
+    background-color: #04033b;
+    font-size: 15px;
+    font-weight: 1000;
+    height: 35px;
+    font-family: 'Bad Script', cursive, sans-serif;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.hi-btn, .low-btn{ 
+    width: 70px;
+    border-radius: 20px 1px;
+}
+
+.start-btn, .restart-btn{
+    width: 130px;
+    border-radius: 2px 15px;
+}
+
+.start-btn:hover, .restart-btn:hover, .hi-btn:hover, .low-btn:hover{
+    background-color: #06056d;
+}
 
