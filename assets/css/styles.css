@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Rampart+One&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+}
+body {
+    flex:100%;    
+    flex-direction: column;
+    background-color: rgba(56, 217, 245, 0.219);
+    color: #000000;
+    text-align: center;
+    font-family: 'Bad Script', cursive, sans-serif;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ .box{
+    display: flex;    
+    flex-wrap: wrap;
+    justify-content: center;
+ }
+ 
+ /*--Main Game Board Section--*/
+
+.game-board {
+    flex-direction: column;
+    background-color: #61bdfa;
+    max-width: 500px;
+    min-height: 300px;
+    padding: 10px;
+}
+
+/*--Score Area and in Game Text--*/
+
+.score{
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 5px;
+}
+.score p{
+  min-width: 90px;
+  text-align: left;
+  font-family: 'Rampart One', cursive, sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+#text-area {
+  justify-content: center;
+  padding: 2px;
+
+}
+#game-text{
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#game-text, .score p{
+  background-color: rgba(255, 238, 0, 0.699);
+  padding: 2px 6px;
+  min-width: 90px;
+  border-radius: 20px ;
+
+}
+/*--Card Area and Card Styling--*/
+
+.card-placement-area {
+  
+    margin: 0;
+    flex:100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+  .cardback{
+    width:85px;
+    height: 135px;    
+    border-radius: 10px;
+    border: 1px  solid #faf761;
+  }
+
+  /*--Game Buttons--*/
+ 
+
+

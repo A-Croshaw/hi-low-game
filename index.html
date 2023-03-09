@@ -8,49 +8,49 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <title>Hi-Low Game</title>
 </head>
-<body>
-    <header>
+<body class ="box">
+    <header class ="box">
         <h1>
             Higher or Lower
         </h1>
     </header>
     <main>
-        <div id ="game">
+        <div id ="game" class ="game-board box">
             <div id = "start-game-btn">
-                <button class ="start-btn">start</button>
-                <button class ="restart-btm">restart</button>
+                <button data-type="submit" id="start-button" class ="start-btn">start</button>
+                <button data-type="submit" id="restart-button" class ="restart-btm">restart</button>
             </div>
-            <div id ="text-area">
-                <p id ="game-text"></p>
+            <div class ="score box">
+                <div id ="current-score">
+                    <p>Current Score: <span id ="score">0</span></p>
+                </div>
+                <div id="high-score">
+                    <p>High Score: <span id ="score">0</span></p>
+                </div>
             </div>
-            <div id ="card-placement">
-                <div id = "card-1">
+            <div id ="text-area" class ="box">
+                <p id ="game-text">Congratulations You win</p>
+            </div>
+            <div class ="card-placement-area box">
+                <div id = "card-1" class="cardback">
 
                 </div>
-                <div id = "card-2">
+                <div id = "card-2" class="cardback">
                     
                 </div>
-                <div id = "card-3">
+                <div id = "card-3" class="cardback">
                     
                 </div>
-                <div id = "card-4">
+                <div id = "card-4" class="cardback">
                     
                 </div>
-                <div id = "card-5">
+                <div id = "card-5" class="cardback" >
                     
                 </div>
             </div>
-            <div id = "ingame-btn">
-                <button class ="hi-btn">Hi</button>
-                <button class ="low-btm">Low</button>
-            </div>
-        </div>
-        <div id ="score">
-            <div id ="game-score">
-                <p class ="score">Current Score<span id ="score"> 0</span></p>
-            </div>
-            <div id="high-score">
-                <p class ="score">High Score<span id ="score"> 0</span></p>
+            <div id = "ingame-btn box">
+                <button data-type="submit" id="hi-button"class ="hi-btn">Hi</button>
+                <button data-type="submit" id="low-button"class ="low-btm">Low</button>
             </div>
         </div>
     </main>
