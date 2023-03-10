@@ -23,16 +23,31 @@ export default class newDeck {
   }
 }
 
-function creatDeck(){
-  let deck = [];
-  for (let s = 0; s < suit.length; s++) {
-      for (let c = 0; c < cardValue.length; c++) {
-          let card = {
-              value: cardValue[c],
-              suit: suit[s]
-          };
-          deck.push(card);
-      }
+
+  class newCard {
+    constructor(suit, value) {
+      this.suit = suit
+      this.cardValue = value
+    }
+  
+    get color() {
+      return this.suit === "♣" || this.suit === "♠" ? "black" : "red"
+    }
+  
+    cardHTML() {
+      const cardElement = document.createElement("div")
+      cardElement.innerText = this.suit
+      cardElement.classList.add("card", this.color)
+      cardElement.dataset.value = `${this.cardValue} ${this.suit}`
+      return cardElement
+    }
   }
-  return deck;
-}
+  
+  function creatDeck(){
+    return suit.flatMap(suit => {
+      return cardValue.map(value => {
+        return new newCard(suit, value)
+      })
+    })
+  }
+

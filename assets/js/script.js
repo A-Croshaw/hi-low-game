@@ -15,8 +15,22 @@ document.getElementById('high-score').innerText ="";
 document.getElementById('text').innerText ="";
 */
 let deck = new newDeck()
+
 deck.shuffle()
 console.log(deck.cards);
+
+let cardSlotOne = deck.cards[0];
+let cardSlotTwo = deck.cards[1];
+let cardSlotThree = deck.cards[2];
+let cardSlotFour = deck.cards[3];
+let cardSlotFive = deck.cards[4];
+
+document.getElementById('card-1').appendChild(cardSlotOne.cardHTML())
+document.getElementById('card-2').appendChild(cardSlotTwo.cardHTML())
+document.getElementById('card-3').appendChild(cardSlotThree.cardHTML())
+document.getElementById('card-4').appendChild(cardSlotFour.cardHTML())
+document.getElementById('card-5').appendChild(cardSlotFive.cardHTML())
+
 
 function restartGame(){}
 function startGame(){}
