@@ -27,7 +27,7 @@ export default class newDeck {
   class newCard {
     constructor(suit, value) {
       this.suit = suit
-      this.cardValue = value
+      this.value = value
     }
   
     get color() {
@@ -38,7 +38,7 @@ export default class newDeck {
       const cardElement = document.createElement("div")
       cardElement.innerText = this.suit
       cardElement.classList.add("card", this.color)
-      cardElement.dataset.value = `${this.cardValue} ${this.suit}`
+      cardElement.dataset.value = `${this.value} ${this.suit}`
       return cardElement
     }
   }
