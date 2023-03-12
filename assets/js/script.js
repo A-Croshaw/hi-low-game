@@ -21,6 +21,7 @@ const cardTwo = document.querySelector('.card-2')
 const cardThree = document.querySelector('.card-3')
 const cardFour = document.querySelector('.card-4')
 const cardFive = document.querySelector('.card-5')
+
 let cardCounter = 0;
 let cardSlotOne, cardSlotTwo, cardSlotThree, cardSlotFour, cardSlotFive
 let items = [];
@@ -33,221 +34,297 @@ document.getElementById('current-score').innerText ="";
 document.getElementById('high-score').innerText ="";
 document.getElementById('text').innerText ="Good Luck";
 
-
-
-
 function restartGame(){
     cardOne.innerHTML = "";
     cardTwo.innerHTML = "";
     cardThree.innerHTML = "";
     cardFour.innerHTML = "";
     cardFive.innerHTML = "";
-    document.getElementById('text').innerText ="";
+    document.getElementById('text').innerText ="Good Luck";
     enableButtons();
     cardCounter = 0;  
 
 }
    
-  function startGame() {
+function startGame() {
     newGame()       
     cardCounter++
     document.getElementById("start-button").disabled = true;
     cardOne.appendChild(cardSlotOne.cardHTML())
 }
-newGame()
 
-  function newGame(){
+function newGame(){
     let deck = new newDeck()
     deck.shuffle()
-
     items= [];
     for (let i = 0; i < 15; i++) { 
       items[i] = deck.cards[i]
     }
+    console.log(
+    cardSlotOne = items[0],
+    cardSlotTwo = items[1],
+    cardSlotThree = items[2],
+    cardSlotFour = items[3],
+    cardSlotFive = items[4],
+    items[5],items[6],items[7],items[8],items[9], items[10],items[11],items[12],items[13],items[14])
+}
 
+function enableButtons(){
+    document.getElementById("hi-button").disabled = false;
+    document.getElementById("low-button").disabled = false;
+    document.getElementById("start-button").disabled = false;
+}
 
-  console.log(
-  cardSlotOne = items[0],
-  cardSlotTwo = items[1],
-  cardSlotThree = items[2],
-  cardSlotFour = items[3],
-  cardSlotFive = items[4],
-  items[5],items[6],items[7],items[8],items[9], items[10],items[11],items[12],items[13],items[14])
- }
- function enableButtons(){
-  document.getElementById("hi-button").disabled = false;
-  document.getElementById("low-button").disabled = false;
-  document.getElementById("start-button").disabled = false;
- }
-  function buttonDisable(){
-  
+function buttonDisable(){
     document.getElementById("hi-button").disabled = true;
     document.getElementById("low-button").disabled = true;
-
-  }
+}
 
 function higherCard(){
     if (cardCounter === 1 ){
-        cardOneTwoCheck()
+        if (higherCardCheck(cardSlotOne, cardSlotTwo)){
+            cardOneTwoCheck()
+        } else{
+            incorrect()
+            cardTwo.appendChild(cardSlotTwo.cardHTML())
+        }
     }else if (cardCounter === 2){
-        cardTwoThreeCheck()
+        if (higherCardCheck(cardSlotTwo, cardSlotThree)){
+            cardTwoThreeCheck()
+        } else{
+            incorrect()
+            cardThree.appendChild(cardSlotThree.cardHTML())
+        }        
     }else if (cardCounter === 3){
-        cardThreeFourCheck()
+        if (higherCardCheck(cardSlotThree, cardSlotFour)){
+            cardThreeFourCheck()
+        } else{
+            incorrect()
+            cardFour.appendChild(cardSlotFour.cardHTML())
+        }        
+        
     }else if (cardCounter === 4){
-        cardFourFiveCheck()
-        cardSlotOne = items[4]
-        cardSlotTwo = items[5]
-        cardSlotThree = items[6]
-        cardSlotFour = items [7]
-        cardSlotFive = items [8]
-        cardOne.innerHTML = "";
-        cardTwo.innerHTML = "";
-        cardThree.innerHTML = "";
-        cardFour.innerHTML = "";
-        cardFive.innerHTML = "";
-        cardOne.appendChild(cardSlotOne.cardHTML())
-    }else if (cardCounter === 5){
-        cardOneTwoCheck()
+        if (higherCardCheck(cardSlotFour, cardSlotFive)){
+            cardFourFiveCheck();
+            cardSetTwo();
+        } else{
+            incorrect();
+            cardFive.appendChild(cardSlotFive.cardHTML())
+        }
+    }else if (cardCounter === 5 ){
+        if (higherCardCheck(cardSlotOne, cardSlotTwo)){
+            cardOneTwoCheck()
+        } else{
+            incorrect()
+            cardTwo.appendChild(cardSlotTwo.cardHTML())
+        }
     }else if (cardCounter === 6){
-        cardTwoThreeCheck()
+        if (higherCardCheck(cardSlotTwo, cardSlotThree)){
+            cardTwoThreeCheck()
+        } else{
+            incorrect()
+            cardThree.appendChild(cardSlotThree.cardHTML())
+        }        
     }else if (cardCounter === 7){
-        cardThreeFourCheck()
+        if (higherCardCheck(cardSlotThree, cardSlotFour)){
+            cardThreeFourCheck()
+        } else{
+            incorrect()
+            cardFour.appendChild(cardSlotFour.cardHTML())
+        }   
     }else if (cardCounter === 8){
-        cardFourFiveCheck()
-        cardSlotOne = items[8]
-        cardSlotTwo = items[9]
-        cardSlotThree = items[10]
-        cardSlotFour = items [11]
-        cardSlotFive = items [12]
-        cardOne.innerHTML = "";
-        cardTwo.innerHTML = "";
-        cardThree.innerHTML = "";
-        cardFour.innerHTML = "";
-        cardFive.innerHTML = "";
-        cardOne.appendChild(cardSlotOne.cardHTML())
-    }else if (cardCounter === 9){
-        cardOneTwoCheck()
+        if (higherCardCheck(cardSlotFour, cardSlotFive)){
+            cardFourFiveCheck();
+            cardSetThree();
+        } else{
+            incorrect();
+            cardFive.appendChild(cardSlotFive.cardHTML())
+        }
+    }else     if (cardCounter === 9 ){
+        if (higherCardCheck(cardSlotOne, cardSlotTwo)){
+            cardOneTwoCheck()
+        } else{
+            incorrect()
+            cardTwo.appendChild(cardSlotTwo.cardHTML())
+        }
     }else if (cardCounter === 10){
-        cardTwoThreeCheck()
+        if (higherCardCheck(cardSlotTwo, cardSlotThree)){
+            cardTwoThreeCheck()
+        } else{
+            incorrect()
+            cardThree.appendChild(cardSlotThree.cardHTML())
+        }        
     }else if (cardCounter === 11){
-        cardThreeFourCheck()
+        if (higherCardCheck(cardSlotThree, cardSlotFour)){
+            cardThreeFourCheck()
+        } else{
+            incorrect()
+            cardFour.appendChild(cardSlotFour.cardHTML())
+        }
     }else if (cardCounter === 12){
-        cardFourFiveCheck()
-    }else if (cardCounter === 13){
-        buttonDisable()
+        if (higherCardCheck(cardSlotFour, cardSlotFive)){
+            cardFourFiveCheck();
+            text.innerText="Congratulations You win"
+            buttonDisable()
+        } else{
+            incorrect();
+            cardFive.appendChild(cardSlotFive.cardHTML())
+        }
     }else{
-        text.innerText="congrats"
-}
+        text.innerText="Press Start to Begin"
+    }      
 }
 
 function lowerCard(){
     if (cardCounter === 1 ){
-        cardOneTwoCheck()
+        if (lowerCardCheck(cardSlotOne, cardSlotTwo)){
+            cardOneTwoCheck()
+        } else{
+            incorrect()
+            cardTwo.appendChild(cardSlotTwo.cardHTML())
+        }
     }else if (cardCounter === 2){
-        cardTwoThreeCheck()
+        if (lowerCardCheck(cardSlotTwo, cardSlotThree)){
+            cardTwoThreeCheck()
+        } else{
+            incorrect()
+            cardThree.appendChild(cardSlotThree.cardHTML())
+        }        
     }else if (cardCounter === 3){
-        cardThreeFourCheck()
+        if (lowerCardCheck(cardSlotThree, cardSlotFour)){
+            cardThreeFourCheck()
+        } else{
+            incorrect()
+            cardFour.appendChild(cardSlotFour.cardHTML())
+        }        
+        
     }else if (cardCounter === 4){
-        cardFourFiveCheck()
-        cardSlotOne = items[4]
-        cardSlotTwo = items[5]
-        cardSlotThree = items[6]
-        cardSlotFour = items [7]
-        cardSlotFive = items [8]
-        cardOne.innerHTML = "";
-        cardTwo.innerHTML = "";
-        cardThree.innerHTML = "";
-        cardFour.innerHTML = "";
-        cardFive.innerHTML = "";
-        cardOne.appendChild(cardSlotOne.cardHTML())
-    }else if (cardCounter === 5){
-        cardOneTwoCheck()
+        if (lowerCardCheck(cardSlotFour, cardSlotFive)){
+            cardFourFiveCheck();
+            cardSetTwo();
+        } else{
+            incorrect();
+            cardFive.appendChild(cardSlotFive.cardHTML())
+        }
+    }else if (cardCounter === 5 ){
+        if (lowerCardCheck(cardSlotOne, cardSlotTwo)){
+            cardOneTwoCheck()
+        } else{
+            incorrect()
+            cardTwo.appendChild(cardSlotTwo.cardHTML())
+        }
     }else if (cardCounter === 6){
-        cardTwoThreeCheck()
+        if (lowerCardCheck(cardSlotTwo, cardSlotThree)){
+            cardTwoThreeCheck()
+        } else{
+            incorrect()
+            cardThree.appendChild(cardSlotThree.cardHTML())
+        }        
     }else if (cardCounter === 7){
-        cardThreeFourCheck()
+        if (lowerCardCheck(cardSlotThree, cardSlotFour)){
+            cardThreeFourCheck()
+        } else{
+            incorrect()
+            cardFour.appendChild(cardSlotFour.cardHTML())
+        }   
     }else if (cardCounter === 8){
-        cardFourFiveCheck()
-        cardSlotOne = items[8]
-        cardSlotTwo = items[9]
-        cardSlotThree = items[10]
-        cardSlotFour = items [11]
-        cardSlotFive = items [12]
-        cardOne.innerHTML = "";
-        cardTwo.innerHTML = "";
-        cardThree.innerHTML = "";
-        cardFour.innerHTML = "";
-        cardFive.innerHTML = "";
-        cardOne.appendChild(cardSlotOne.cardHTML())
-    }else if (cardCounter === 9){
-        cardOneTwoCheck()
+        if (lowerCardCheck(cardSlotFour, cardSlotFive)){
+            cardFourFiveCheck();
+            cardSetThree();
+        } else{
+            incorrect();
+            cardFive.appendChild(cardSlotFive.cardHTML())
+        }
+    }else     if (cardCounter === 9 ){
+        if (lowerCardCheck(cardSlotOne, cardSlotTwo)){
+            cardOneTwoCheck()
+        } else{
+            incorrect()
+            cardTwo.appendChild(cardSlotTwo.cardHTML())
+        }
     }else if (cardCounter === 10){
-        cardTwoThreeCheck()
+        if (lowerCardCheck(cardSlotTwo, cardSlotThree)){
+            cardTwoThreeCheck()
+        } else{
+            incorrect()
+            cardThree.appendChild(cardSlotThree.cardHTML())
+        }        
     }else if (cardCounter === 11){
-        cardThreeFourCheck()   
+        if (lowerCardCheck(cardSlotThree, cardSlotFour)){
+            cardThreeFourCheck()
+        } else{
+            incorrect()
+            cardFour.appendChild(cardSlotFour.cardHTML())
+        }
     }else if (cardCounter === 12){
-        cardFourFiveCheck()
-    }else if (cardCounter === 13){
-        buttonDisable()
+        if (lowerCardCheck(cardSlotFour, cardSlotFive)){
+            cardFourFiveCheck();
+            text.innerText="Congratulations You win"
+            buttonDisable()
+        } else{
+            incorrect();
+            cardFive.appendChild(cardSlotFive.cardHTML())
+        }
     }else{
-        text.innerText="congrats"
+        text.innerText="Press Start to Begin"
     }      
 }
 
-function cardFourFiveCheck(){
-    if (lowerCardCheck(cardSlotFour, cardSlotFive)){
-        cardFive.appendChild(cardSlotFive.cardHTML())
-        cardCounter ++
+function incorrect(){
+    text.innerText="Sorry Incorret guess";
+    buttonDisable()
+}
 
-    }if (higherCardCheck(cardSlotFour, cardSlotFive)){
-        cardFive.appendChild(cardSlotFive.cardHTML())
-        cardCounter ++
-    }else{
-        text.innerText="congrats"
-        buttonDisable()
-    }
+function cardSetTwo(){
+    cardSlotOne = items[4]
+    cardSlotTwo = items[5]
+    cardSlotThree = items[6]
+    cardSlotFour = items [7]
+    cardSlotFive = items [8]
+    cardOne.innerHTML = "";
+    cardTwo.innerHTML = "";
+    cardThree.innerHTML = "";
+    cardFour.innerHTML = "";
+    cardFive.innerHTML = "";
+    cardOne.appendChild(cardSlotOne.cardHTML())
+}
+
+function cardSetThree(){
+    cardSlotOne = items[8]
+    cardSlotTwo = items[9]
+    cardSlotThree = items[10]
+    cardSlotFour = items [11]
+    cardSlotFive = items [12]
+    cardOne.innerHTML = "";
+    cardTwo.innerHTML = "";
+    cardThree.innerHTML = "";
+    cardFour.innerHTML = "";
+    cardFive.innerHTML = "";
+    cardOne.appendChild(cardSlotOne.cardHTML())
+}
+
+function cardFourFiveCheck(){
+    cardFive.appendChild(cardSlotFive.cardHTML())
+    cardCounter ++
 }
 function cardThreeFourCheck(){
-    if (lowerCardCheck(cardSlotThree, cardSlotFour)){
-        cardFour.appendChild(cardSlotFour.cardHTML())
-        cardCounter ++
-    }if (higherCardCheck(cardSlotThree, cardSlotFour)){
-        cardFour.appendChild(cardSlotFour.cardHTML())
-        cardCounter ++
-    }else{
-        text.innerText="congrats"
-    }
+    cardFour.appendChild(cardSlotFour.cardHTML())
+    cardCounter ++
 }
 function cardTwoThreeCheck(){
-    if (lowerCardCheck(cardSlotTwo, cardSlotThree)){
-        cardThree.appendChild(cardSlotThree.cardHTML())
-        cardCounter ++
-    }else if (higherCardCheck(cardSlotTwo, cardSlotThree)){
-        cardThree.appendChild(cardSlotThree.cardHTML())
-        cardCounter ++
-    }else{
-        text.innerText="congrats"
-        buttonDisable()
-    }
+    cardThree.appendChild(cardSlotThree.cardHTML())
+    cardCounter ++
 }
-function cardOneTwoCheck(){
-    if (lowerCardCheck(cardSlotOne, cardSlotTwo)){
-        cardTwo.appendChild(cardSlotTwo.cardHTML())
-        cardCounter ++
-    }else if (higherCardCheck(cardSlotOne, cardSlotTwo)){
-        cardTwo.appendChild(cardSlotTwo.cardHTML())
-        cardCounter ++
-    }else{
-        text.innerText ="congrats"
-        buttonDisable()
-      }
-}
-function higherCardCheck(cardOne, cardTwo) {
 
-    return cardValue[cardOne.value] < cardValue[cardTwo.value]
+function cardOneTwoCheck(){   
+    cardTwo.appendChild(cardSlotTwo.cardHTML())
+    cardCounter ++
+}
+
+function higherCardCheck(cardOne, cardTwo) {
+    return cardValue[cardOne.value] <= cardValue[cardTwo.value]
 }
 
 function lowerCardCheck(cardOne, cardTwo) {
-
-    return cardValue[cardOne.value] > cardValue[cardTwo.value]
+    return cardValue[cardOne.value] >= cardValue[cardTwo.value]
 }
