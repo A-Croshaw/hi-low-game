@@ -25,6 +25,10 @@ const cardFive = document.querySelector('.card-5')
 let cardCounter = 0;
 let cardSlotOne, cardSlotTwo, cardSlotThree, cardSlotFour, cardSlotFive
 let items = [];
+document.getElementById("start-button").style.visibility = 'visible';
+document.getElementById("restart-button").style.visibility = 'hidden';
+document.getElementById('hi-button').style.visibility = 'hidden';
+document.getElementById('low-button').style.visibility = 'hidden';
 
 document.getElementById('hi-button').addEventListener('click', higherCard);
 document.getElementById('low-button').addEventListener('click', lowerCard);
@@ -32,7 +36,7 @@ document.getElementById('start-button').addEventListener('click', startGame);
 document.getElementById('restart-button').addEventListener('click', restartGame);
 document.getElementById('current-score').innerText ="";
 document.getElementById('high-score').innerText ="";
-document.getElementById('text').innerText ="Good Luck";
+document.getElementById('text').innerText ="Press Start To Begin";
 
 function restartGame(){
     cardOne.innerHTML = "";
@@ -40,17 +44,21 @@ function restartGame(){
     cardThree.innerHTML = "";
     cardFour.innerHTML = "";
     cardFive.innerHTML = "";
-    document.getElementById('text').innerText ="Good Luck";
-    enableButtons();
-    cardCounter = 0;  
-
+    document.getElementById('text').innerText ="Press Start To Begin";
+    cardCounter = 0;
+    document.getElementById("restart-button").style.visibility = 'hidden';
+    document.getElementById("start-button").style.visibility = 'visible';
 }
    
 function startGame() {
-    newGame()       
-    cardCounter++
-    document.getElementById("start-button").disabled = true;
-    cardOne.appendChild(cardSlotOne.cardHTML())
+    newGame();     
+    cardCounter++;
+    cardOne.appendChild(cardSlotOne.cardHTML());
+    document.getElementById("start-button").style.visibility = 'hidden';
+    document.getElementById("restart-button").style.visibility = 'visible';
+    document.getElementById('text').innerText ="Good Luck";
+    ShowLowHightButtons()
+
 }
 
 function newGame(){
@@ -69,15 +77,13 @@ function newGame(){
     items[5],items[6],items[7],items[8],items[9], items[10],items[11],items[12],items[13],items[14])
 }
 
-function enableButtons(){
-    document.getElementById("hi-button").disabled = false;
-    document.getElementById("low-button").disabled = false;
-    document.getElementById("start-button").disabled = false;
+function hideLowHightButtons(){
+    document.getElementById('hi-button').style.visibility = 'hidden';
+    document.getElementById('low-button').style.visibility = 'hidden';
 }
-
-function buttonDisable(){
-    document.getElementById("hi-button").disabled = true;
-    document.getElementById("low-button").disabled = true;
+function ShowLowHightButtons() {
+    document.getElementById('hi-button').style.visibility = 'visible';
+    document.getElementById('low-button').style.visibility = 'visible';
 }
 
 function higherCard(){
@@ -165,10 +171,11 @@ function higherCard(){
         if (higherCardCheck(cardSlotFour, cardSlotFive)){
             cardFourFiveCheck();
             text.innerText="Congratulations You win"
-            buttonDisable()
+            hideLowHightButtons()
         } else{
             incorrect();
             cardFive.appendChild(cardSlotFive.cardHTML())
+            
         }
     }else{
         text.innerText="Press Start to Begin"
@@ -260,7 +267,7 @@ function lowerCard(){
         if (lowerCardCheck(cardSlotFour, cardSlotFive)){
             cardFourFiveCheck();
             text.innerText="Congratulations You win"
-            buttonDisable()
+            hideButtons()
         } else{
             incorrect();
             cardFive.appendChild(cardSlotFive.cardHTML())
@@ -272,7 +279,7 @@ function lowerCard(){
 
 function incorrect(){
     text.innerText="Sorry Incorret guess";
-    buttonDisable()
+    hideLowHightButtons()
 }
 
 function cardSetTwo(){

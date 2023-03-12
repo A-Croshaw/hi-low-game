@@ -162,6 +162,7 @@ body{
     border-radius: 2px 15px;
 }
 
+
 .start-btn:hover, .restart-btn:hover, .hi-btn:hover, .low-btn:hover{
     background-color: #06056d;
 }
