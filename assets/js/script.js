@@ -25,6 +25,8 @@ const cardFive = document.querySelector('.card-5')
 let cardCounter = 0;
 let cardSlotOne, cardSlotTwo, cardSlotThree, cardSlotFour, cardSlotFive
 let items = [];
+let scoreCount = 0;
+
 document.getElementById("start-button").style.visibility = 'visible';
 document.getElementById("restart-button").style.visibility = 'hidden';
 document.getElementById('hi-button').style.visibility = 'hidden';
@@ -33,10 +35,10 @@ document.getElementById('low-button').style.visibility = 'hidden';
 document.getElementById('hi-button').addEventListener('click', higherCard);
 document.getElementById('low-button').addEventListener('click', lowerCard);
 document.getElementById('start-button').addEventListener('click', startGame);
-document.getElementById('restart-button').addEventListener('click', restartGame);
-document.getElementById('current-score').innerText ="";
-document.getElementById('high-score').innerText ="";
-document.getElementById('text').innerText ="Press Start To Begin";
+document.getElementById('restart-button').addEventListener('click', restartGame)
+document.getElementById('current-score').innerText = "0";
+document.getElementById("high-score").innerText = "0";
+document.getElementById('text').innerText = "Press Start To Begin";
 
 function restartGame(){
     cardOne.innerHTML = "";
@@ -48,6 +50,8 @@ function restartGame(){
     cardCounter = 0;
     document.getElementById("restart-button").style.visibility = 'hidden';
     document.getElementById("start-button").style.visibility = 'visible';
+    scoreCount = 0;
+    document.getElementById('current-score').innerText = "0";
 }
    
 function startGame() {
@@ -89,7 +93,7 @@ function ShowLowHightButtons() {
 function higherCard(){
     if (cardCounter === 1 ){
         if (higherCardCheck(cardSlotOne, cardSlotTwo)){
-            cardOneTwoCheck()
+            cardOneTwoCheck();
         } else{
             incorrect()
             cardTwo.appendChild(cardSlotTwo.cardHTML())
@@ -108,7 +112,6 @@ function higherCard(){
             incorrect()
             cardFour.appendChild(cardSlotFour.cardHTML())
         }        
-        
     }else if (cardCounter === 4){
         if (higherCardCheck(cardSlotFour, cardSlotFive)){
             cardFourFiveCheck();
@@ -267,7 +270,7 @@ function lowerCard(){
         if (lowerCardCheck(cardSlotFour, cardSlotFive)){
             cardFourFiveCheck();
             text.innerText="Congratulations You win"
-            hideButtons()
+            hideLowHightButtons()
         } else{
             incorrect();
             cardFive.appendChild(cardSlotFive.cardHTML())
@@ -293,45 +296,60 @@ function cardSetTwo(){
     cardThree.innerHTML = "";
     cardFour.innerHTML = "";
     cardFive.innerHTML = "";
-    cardOne.appendChild(cardSlotOne.cardHTML())
+    cardOne.appendChild(cardSlotOne.cardHTML());
 }
 
 function cardSetThree(){
-    cardSlotOne = items[8]
-    cardSlotTwo = items[9]
-    cardSlotThree = items[10]
-    cardSlotFour = items [11]
-    cardSlotFive = items [12]
+    cardSlotOne = items[8];
+    cardSlotTwo = items[9];
+    cardSlotThree = items[10];
+    cardSlotFour = items [11];
+    cardSlotFive = items [12];
     cardOne.innerHTML = "";
     cardTwo.innerHTML = "";
     cardThree.innerHTML = "";
     cardFour.innerHTML = "";
     cardFive.innerHTML = "";
-    cardOne.appendChild(cardSlotOne.cardHTML())
+    cardOne.appendChild(cardSlotOne.cardHTML());
 }
 
 function cardFourFiveCheck(){
-    cardFive.appendChild(cardSlotFive.cardHTML())
-    cardCounter ++
+    cardFive.appendChild(cardSlotFive.cardHTML());
+    cardCounter ++;
+    score()
 }
 function cardThreeFourCheck(){
-    cardFour.appendChild(cardSlotFour.cardHTML())
-    cardCounter ++
+    cardFour.appendChild(cardSlotFour.cardHTML());
+    cardCounter ++;
+    score()
 }
 function cardTwoThreeCheck(){
-    cardThree.appendChild(cardSlotThree.cardHTML())
-    cardCounter ++
+    cardThree.appendChild(cardSlotThree.cardHTML());
+    cardCounter ++;
+    score()
 }
 
 function cardOneTwoCheck(){   
-    cardTwo.appendChild(cardSlotTwo.cardHTML())
-    cardCounter ++
+    cardTwo.appendChild(cardSlotTwo.cardHTML());
+    cardCounter ++;
+    score()
 }
 
 function higherCardCheck(cardOne, cardTwo) {
-    return cardValue[cardOne.value] <= cardValue[cardTwo.value]
+    return cardValue[cardOne.value] <= cardValue[cardTwo.value];
 }
 
 function lowerCardCheck(cardOne, cardTwo) {
-    return cardValue[cardOne.value] >= cardValue[cardTwo.value]
+    return cardValue[cardOne.value] >= cardValue[cardTwo.value];
+}
+
+function score(){
+    scoreCount = scoreCount + 10;
+    document.getElementById("current-score").innerText = scoreCount;
+    let highScoreCount = 0;
+
+    if (scoreCount > highScoreCount){
+        highScoreCount = scoreCount;
+        document.getElementById("high-score").innerText = highScoreCount;
+    }
 }

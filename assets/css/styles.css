@@ -48,6 +48,7 @@ body{
   font-family: 'Rampart One', cursive, sans-serif;
   font-size: 16px;
   font-weight: 800;
+  margin-top: 5px;
 }
 
 
@@ -167,3 +168,6 @@ body{
     background-color: #06056d;
 }
 
+#ingame-btn{
+  justify-content: space-evenly;
+}
