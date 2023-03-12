@@ -27,7 +27,7 @@ body{
 .game-board{
     flex-direction: column;
     background-color: #61bdfa;
-    background-image: url(/assets/images/Game-Area-Image.jpg);
+    background: url(../images/Game-Area-Image.jpg) no-repeat center;
     max-width: 500px;
     min-height: 300px;
     padding: 10px;
@@ -87,7 +87,7 @@ body{
     width:85px;
     height: 135px;    
     border-radius: 10px;
-    background-image: url(/assets/images/Back-of-Card-Image.jpg);
+    background: url(../images/Back-of-Card-Image.jpg) no-repeat center;
 }
 
 .card{
@@ -132,7 +132,7 @@ body{
 }
 
 
-.start-btn, .restart-btn, .hi-btn, .low-btn, .cardback .card{
+.start-btn, .restart-btn, .hi-btn, .low-btn, .cardback, .card{
     border: 1px  solid #faf761;
 }
   /*--Game Buttons--*/
