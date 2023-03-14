@@ -26,16 +26,14 @@ let cardCounter = 0;
 let cardSlotOne, cardSlotTwo, cardSlotThree, cardSlotFour, cardSlotFive
 let items = [];
 let scoreCount = 0;
+let highScoreCount = 0;
 
-document.getElementById("start-button").style.visibility = 'visible';
-document.getElementById("restart-button").style.visibility = 'hidden';
 document.getElementById('hi-button').style.visibility = 'hidden';
 document.getElementById('low-button').style.visibility = 'hidden';
 
 document.getElementById('hi-button').addEventListener('click', higherCard);
 document.getElementById('low-button').addEventListener('click', lowerCard);
 document.getElementById('start-button').addEventListener('click', startGame);
-document.getElementById('restart-button').addEventListener('click', restartGame);
 document.getElementById('play-btn').addEventListener('click', gameRules);
 document.getElementById('game-rules').addEventListener('click', gameRules);
 document.getElementById('current-score').innerText = "0";
@@ -48,7 +46,7 @@ function gameRules(){
 document.getElementById("game-rules").style.visibility = 'hidden';
 }
 
-function restartGame(){
+function startGame(){
     cardOne.innerHTML = "";
     cardTwo.innerHTML = "";
     cardThree.innerHTML = "";
@@ -56,24 +54,17 @@ function restartGame(){
     cardFive.innerHTML = "";
     document.getElementById('text').innerText ="Press Start To Begin";
     cardCounter = 0;
-    document.getElementById("restart-button").style.visibility = 'hidden';
-    document.getElementById("start-button").style.visibility = 'visible';
     scoreCount = 0;
     document.getElementById('current-score').innerText = "0";
-}
-   
-function startGame() {
     newGame();     
     cardCounter++;
     cardOne.appendChild(cardSlotOne.cardHTML());
-    document.getElementById("start-button").style.visibility = 'hidden';
-    document.getElementById("restart-button").style.visibility = 'visible';
     document.getElementById('text').innerText ="Good Luck";
     ShowLowHightButtons()
-
 }
 
 function newGame(){
+    document.getElementById("start-button").innerText ="RESTART";
     let deck = new newDeck()
     deck.shuffle()
     items= [];
@@ -354,8 +345,6 @@ function lowerCardCheck(cardOne, cardTwo) {
 function score(){
     scoreCount = scoreCount + 10;
     document.getElementById("current-score").innerText = scoreCount;
-    let highScoreCount = 0;
-
     if (scoreCount > highScoreCount){
         highScoreCount = scoreCount;
         document.getElementById("high-score").innerText = highScoreCount;
