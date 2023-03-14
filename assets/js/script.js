@@ -34,17 +34,28 @@ document.getElementById('low-button').style.visibility = 'hidden';
 document.getElementById('hi-button').addEventListener('click', higherCard);
 document.getElementById('low-button').addEventListener('click', lowerCard);
 document.getElementById('start-button').addEventListener('click', startGame);
-document.getElementById('play-btn').addEventListener('click', gameRules);
-document.getElementById('game-rules').addEventListener('click', gameRules);
+document.getElementById('play-btn').addEventListener('click', hideRules);
+document.getElementById('game-rules').addEventListener('click', hideRules);
+document.getElementById('rule-btn').addEventListener('click', showRules);
 document.getElementById('current-score').innerText = "0";
 document.getElementById("high-score").innerText = "0";
 document.getElementById('text').innerText = "Press Start To Begin";
 
 
+function showRules(){
+    document.getElementById("game-rules").style.visibility = 'visible';
+    document.getElementById("start-button").innerText ="START";
+    cardOne.innerHTML = "";
+    cardTwo.innerHTML = "";
+    cardThree.innerHTML = "";
+    cardFour.innerHTML = "";
+    cardFive.innerHTML = "";
+}
 
-function gameRules(){
+function hideRules(){
 document.getElementById("game-rules").style.visibility = 'hidden';
 }
+
 
 function startGame(){
     cardOne.innerHTML = "";
