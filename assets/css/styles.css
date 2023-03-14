@@ -8,6 +8,7 @@
 body{
     flex:100%;    
     flex-direction: column;
+    flex-wrap: wrap;
     background-color: rgba(56, 217, 245, 0.219);
     color: #000000;
     text-align: center;
@@ -27,6 +28,7 @@ body{
 
  .game-rules{
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   padding: 10px;
   margin: 5px;
@@ -115,8 +117,8 @@ body{
 }
 
 .cardback{
-    width:85px;
-    height: 135px;    
+    width:76px;
+    height: 120px;    
     border-radius: 10px;
     background: url(../images/Back-of-Card-Image.jpg) no-repeat center;
 }
@@ -189,6 +191,8 @@ body{
   height: 30px;
   padding-top: 1px;
   padding-left: 1px;
+  width: 110px;
+  border-radius: 2px 15px;
 }
 
 .hi-btn, .low-btn { 
@@ -198,13 +202,11 @@ body{
 .how-to-play-btn{
   font-weight: 1000;
   letter-spacing: 1px;
-  width: 140px;
   font-size: 13px;
   font-family: 'Bad Script', cursive, sans-serif;
   text-transform: uppercase;
-  border-radius: 2px 15px;
 }
-.start-btn, .play-btn{
+.start-btn{
   width: 130px;
   border-radius: 2px 15px;
 }
@@ -219,7 +221,7 @@ body{
   display: flex;
   flex-direction: row;
   justify-content:space-around;
-  gap:50px
+  gap:5px
 }
 
 .info-section{
@@ -241,4 +243,23 @@ body{
 
 #ingame-btn{
   justify-content: space-evenly;
+}
+
+@media screen and (min-width: 650px) {
+  .card-placement-area {
+    gap:10px
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .how-to-play-btn,.play-btn{
+    width:120px;
+  }
+  .game-rule-btn{
+    gap: 20px;
+  }
+  .cardback{
+    width:85px;
+    height: 135px;
+  }
 }
