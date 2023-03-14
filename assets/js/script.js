@@ -35,10 +35,18 @@ document.getElementById('low-button').style.visibility = 'hidden';
 document.getElementById('hi-button').addEventListener('click', higherCard);
 document.getElementById('low-button').addEventListener('click', lowerCard);
 document.getElementById('start-button').addEventListener('click', startGame);
-document.getElementById('restart-button').addEventListener('click', restartGame)
+document.getElementById('restart-button').addEventListener('click', restartGame);
+document.getElementById('play-btn').addEventListener('click', gameRules);
+document.getElementById('game-rules').addEventListener('click', gameRules);
 document.getElementById('current-score').innerText = "0";
 document.getElementById("high-score").innerText = "0";
 document.getElementById('text').innerText = "Press Start To Begin";
+
+
+
+function gameRules(){
+document.getElementById("game-rules").style.visibility = 'hidden';
+}
 
 function restartGame(){
     cardOne.innerHTML = "";
