@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Rampart+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Poppins:wght@300&family=Rampart+One&display=swap');
 
 *{
     margin:0;
@@ -31,15 +31,16 @@ body{
   padding: 10px;
   margin: 5px;
   color: #f8df00;
-  background-color: #000000ce;
+  background-color: #000000c4;
   min-height: 200px;
   max-width: 455px;
   position: absolute;
  }
 
  .rule-text{
-  font-size: 18px;
-  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
   line-height: 25px;
   padding-bottom: 5px;
   margin: 13px;
@@ -162,12 +163,12 @@ body{
 }
 
 
-.start-btn, .rule-btn, .hi-btn, .low-btn, .cardback, .card, .play-btn{
+.start-btn, .rule-btn, .hi-btn, .low-btn, .cardback, .card, .play-btn, .how-to-play-btn{
     border: 1px  solid #faf761;
 }
   /*--Game Buttons--*/
 
-.start-btn, .rule-btn, .hi-btn, .low-btn, .play-btn{
+.start-btn, .rule-btn, .hi-btn, .low-btn, .play-btn, .how-to-play-btn{
     color: rgb(255, 230, 0);
     cursor: pointer;
     background-color: #04033b;   
@@ -184,21 +185,26 @@ body{
   text-transform: uppercase;
 }
 
-.play-btn{
-  font-size: 15px;
-  font-weight: 1000;
-  letter-spacing: 5px;
+.play-btn, .how-to-play-btn{
   height: 30px;
   padding-top: 1px;
   padding-left: 1px;
 }
 
-.hi-btn, .low-btn, .play-btn{ 
+.hi-btn, .low-btn { 
     width: 70px;
     border-radius: 20px 1px;
 }
-
-.start-btn{
+.how-to-play-btn{
+  font-weight: 1000;
+  letter-spacing: 1px;
+  width: 140px;
+  font-size: 13px;
+  font-family: 'Bad Script', cursive, sans-serif;
+  text-transform: uppercase;
+  border-radius: 2px 15px;
+}
+.start-btn, .play-btn{
   width: 130px;
   border-radius: 2px 15px;
 }
@@ -209,6 +215,13 @@ body{
   height: 35px;
 }
 
+.game-rule-btn{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  gap:50px
+}
+
 .info-section{
   display: flex;
   flex: 100%;;
@@ -217,7 +230,7 @@ body{
 
 }
 
-.start-btn:hover, .restart-btn:hover, .hi-btn:hover, .low-btn:hover, .play-btn:hover{
+.start-btn:hover, .restart-btn:hover, .hi-btn:hover, .low-btn:hover, .play-btn:hover, .play-btn:hover, .rule-btn:hover{
   background-color: #06056d;
 }
 

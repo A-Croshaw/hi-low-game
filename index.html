@@ -17,14 +17,18 @@
     <main>
         <div class ="game-rules box" id = "game-rules">
             <h3>Welcome to HI and LOW</h3>
-            <h3>Game Rules</h3>
+            <h3 id="rule-header"></h3>
             <div class="rule-text">
-                <p>To win reach the final card by guessing higer or lower for the next card</p>
-                <p>There are 13 cards dealt that will show from left to right over the 5 card display</p>
-                <p>When you are on the 4th and 8th card and you guess corret the 5th and 9th cards will show in the 1st card position.</p>
-                <p>When you are on the 4th and 8th card and you guess incorret the 5th and 9th cards will show in the 5th card position.</p>
+                <p id = "rule-text-1"></p>
+                <p id = "rule-text-2"></p>
+                <p id = "rule-text-3"></p>
+                <p id = "rule-text-4"></p>
+                <p id = "rule-text-5"></p>
             </div>
-            <button data-type="submit" id="play-btn" class ="play-btn">Play</button>
+            <div class = "game-rule-btn">
+                <button data-type="submit" id="play-btn" class ="play-btn">Play</button>
+                <button data-type="submit" id="how-to-play" class ="how-to-play-btn"></button>
+            </div>
         </div>
         <div id ="game" class ="game-board box">
             <div class = "main-btns box" >

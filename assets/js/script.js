@@ -23,38 +23,25 @@ const cardFour = document.querySelector('.card-4')
 const cardFive = document.querySelector('.card-5')
 
 let cardCounter = 0;
-let cardSlotOne, cardSlotTwo, cardSlotThree, cardSlotFour, cardSlotFive
+let cardSlotOne, cardSlotTwo, cardSlotThree, cardSlotFour, cardSlotFive, ruleText;
 let items = [];
 let scoreCount = 0;
 let highScoreCount = 0;
 
+
 document.getElementById('hi-button').style.visibility = 'hidden';
 document.getElementById('low-button').style.visibility = 'hidden';
-
 document.getElementById('hi-button').addEventListener('click', higherCard);
 document.getElementById('low-button').addEventListener('click', lowerCard);
 document.getElementById('start-button').addEventListener('click', startGame);
 document.getElementById('play-btn').addEventListener('click', hideRules);
-document.getElementById('game-rules').addEventListener('click', hideRules);
+document.getElementById('how-to-play').addEventListener('click', howToPlay);
 document.getElementById('rule-btn').addEventListener('click', showRules);
 document.getElementById('current-score').innerText = "0";
 document.getElementById("high-score").innerText = "0";
 document.getElementById('text').innerText = "Press Start To Begin";
 
 
-function showRules(){
-    document.getElementById("game-rules").style.visibility = 'visible';
-    document.getElementById("start-button").innerText ="START";
-    cardOne.innerHTML = "";
-    cardTwo.innerHTML = "";
-    cardThree.innerHTML = "";
-    cardFour.innerHTML = "";
-    cardFive.innerHTML = "";
-}
-
-function hideRules(){
-document.getElementById("game-rules").style.visibility = 'hidden';
-}
 
 
 function startGame(){
@@ -99,7 +86,42 @@ function ShowLowHightButtons() {
     document.getElementById('hi-button').style.visibility = 'visible';
     document.getElementById('low-button').style.visibility = 'visible';
 }
+function showRules(){
+    document.getElementById("game-rules").style.visibility = 'visible';
+    document.getElementById("start-button").innerText ="START";
+    cardOne.innerHTML = "";
+    cardTwo.innerHTML = "";
+    cardThree.innerHTML = "";
+    cardFour.innerHTML = "";
+    cardFive.innerHTML = "";
+    
+}
+howToPlay()
+function hideRules(){
+    document.getElementById("game-rules").style.visibility = 'hidden';
+}
 
+function howToPlay(){
+    
+    if (ruleText === 0) {
+        document.getElementById('rule-header').innerText ="How To Play";
+        document.getElementById('rule-text-1').innerText ="Press the Start button to begin a game";
+        document.getElementById('rule-text-2').innerText ="Pressing the Restart button will restart the game after winning or losing";
+        document.getElementById('rule-text-3').innerText ="Press the Hi button to guess high";
+        document.getElementById('rule-text-4').innerText ="Press the Low button to guess low";
+        document.getElementById('rule-text-5').innerText ="Cards of the same value are treated as hi or low values";
+        document.getElementById("how-to-play").innerText ="Game Rules";
+        ruleText++
+    }else {
+        document.getElementById('rule-header').innerText ="Game Rules";
+        document.getElementById('rule-text-1').innerText ="To win, Reach the final card by guessing higer or lower for the next card";
+        document.getElementById('rule-text-2').innerText ="There are 13 cards dealt that will be shown from left to right over the 5 card display";
+        document.getElementById('rule-text-3').innerText ="When you are on the 4th and 8th card and guess corret the 5th and 9th cards will show in the 1st card position";
+        document.getElementById('rule-text-4').innerText ="When you are on the 4th and 8th card and guess incorret the 5th and 9th cards will show in the 5th card position";
+        document.getElementById("how-to-play").innerText ="How to Play";
+        ruleText = 0; 
+      } 
+ }
 function higherCard(){
     if (cardCounter === 1 ){
         if (higherCardCheck(cardSlotOne, cardSlotTwo)){
