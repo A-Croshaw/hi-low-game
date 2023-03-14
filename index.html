@@ -27,18 +27,21 @@
             <button data-type="submit" id="play-btn" class ="play-btn">Play</button>
         </div>
         <div id ="game" class ="game-board box">
-            <div id = "start-game-btn">
-                <button data-type="submit" id="start-button" class ="start-btn">start</button>
+            <div class = "main-btns box" >
+                <div class = "start-box">
+                    <button data-type="submit" id="start-button" class ="start-btn">start</button>
+                </div>
             </div>
-            <div class ="score box">
-                <div>
+            <div class = "info-section">
+                <div class ="score">
+                    <p>High Score: <span id ="high-score">0</span></p>
                     <p>Current Score: <span id ="current-score">0</span></p>
                 </div>
                 <div>
-                    <p>High Score: <span id ="high-score">0</span></p>
+                    <button data-type="submit" id="game-rule" class ="rule-btn">rules</button>
                 </div>
             </div>
-            <div id ="game-text" class ="box">
+            <div id ="game-text">
                 <p id ="text">Congratulations You win</p>
             </div>
             <div class ="card-placement-area box">
