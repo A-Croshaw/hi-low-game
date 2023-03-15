@@ -55,7 +55,6 @@ The elements to this feature game are as followed:
 ### _1 - The Background_
 
  * The main background is a soft light blue #38d9f538 to make the main game area stand out 
-
  * whilst the background image to the game area is not visualy over powering to the rest of the elements within the game area.
 
 ![Game-Area-Image](documents/readme-images/Game-Area-Image.webp)
@@ -75,7 +74,6 @@ The elements to this feature game are as followed:
 ### _4 - The Footer_
 
  * The footer reads "Hi Low Game Github Repository" which link to the github repository for this game.
-
  * It is just a simple text format using the font "Bad Script" that is imported from Google fonts.
 
 ![Footer](documents/readme-images/Footer.png)
@@ -165,25 +163,43 @@ The elements to this feature game are as followed:
 ## _Implemented Features_
  
  * The responsiveness of the site is 280px and up.
-
  * All external links open up as they should on all devices.
- 
  * Buttons that call different functions to operate the game.
- 
  * Element to track a users higest score within that game session.
  (not linked to external storage to keep highest score from refreshing when page reloads) 
- 
  * 404 page to let the user know there is a broken link or a mistype in the URL.
- 
  * 404 page has a navigation bar and also a link in content to return to the main content of the site. 
  
 ## _Features to be Implemented_
 
+ * A second card game to give the user a choice of game eg 21. 
+
 # _Design_
+ 
+ * The Header will be above the game area.
+ * The footer will be below the game area.
+ * The game will be only on one page with all elements reaction with in a set area.
+ * There will be an information window that will describe the rules and how to play the game when loaded.
+ * The information window will be accessible via a button on the main game area.
+ * The information button will be placed in the top right hand corner of the game area.
+
+ ![Wire Frame](documents/readme-images/Game-design1.png)
+
+ * With in the main game area there will be a high score and a current score to the left top coner.
+ * The start/restart button will be to the top center.
+ * A text area to display the text in game text during the game.
+ * There will be five cards shown with the backs shown which will reveal the cards are progress through.
+ * each card back will display an image.
+ * All cards displayed when revealed will represent a card from a normal deck of cards.
+ * Below the cards there will be a hi and low button for user to select to play the game.
+
+ ![Wire Frame](documents/readme-images/Game-design.png)
  
 # _Bugs_
 
  * There are no known bugs within the site after testing on multiple devises.
+ 
+ * An exterme hi and low section that goes through a full 52 cards. 
 
 # _Testing_
 
