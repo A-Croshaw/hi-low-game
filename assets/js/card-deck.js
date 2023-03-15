@@ -3,15 +3,15 @@ let suit = ["♠", "♣", "♥", "♦"];
 
 export default class newDeck {
   constructor(cards = creatDeck()) {
-    this.cards = cards
+    this.cards = cards;
   }
 
   get deckSize() {
-    return this.cards.length
+    return this.cards.length;
   }
 
-  shuffle(){
-    for (let s = 0; s < 100; s++){
+  shuffle() {
+    for (let s = 0; s < 100; s++) {
       for (let i = this.deckSize; i > 0; i--) {
         let p1 = Math.floor((Math.random() * this.cards.length));
         let p2 = Math.floor((Math.random() * this.cards.length));
@@ -23,31 +23,29 @@ export default class newDeck {
   }
 }
 
-
-  class newCard {
-    constructor(suit, value) {
-      this.suit = suit
-      this.value = value
-    }
-  
-    get color() {
-      return this.suit === "♣" || this.suit === "♠" ? "black" : "red"
-    }
-  
-    cardHTML() {
-      const cardElement = document.createElement("div")
-      cardElement.innerText = this.suit
-      cardElement.classList.add("card", this.color)
-      cardElement.dataset.value = `${this.value} ${this.suit}`
-      return cardElement
-    }
+class newCard {
+  constructor(suit, value) {
+    this.suit = suit;
+    this.value = value;
   }
-  
-  function creatDeck(){
-    return suit.flatMap(suit => {
-      return cardValue.map(value => {
-        return new newCard(suit, value)
-      })
+
+  get color() {
+    return this.suit === "♣" || this.suit === "♠" ? "black" : "red";
+  }
+
+  cardHTML() {
+    const cardElement = document.createElement("div")
+    cardElement.innerText = this.suit;
+    cardElement.classList.add("card", this.color);
+    cardElement.dataset.value = `${this.value} ${this.suit}`;
+    return cardElement;
+  }
+}
+
+function creatDeck() {
+  return suit.flatMap(suit => {
+    return cardValue.map(value => {
+      return new newCard(suit, value)
     })
-  }
-
+  });
+}

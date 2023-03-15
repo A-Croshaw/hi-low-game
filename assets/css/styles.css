@@ -57,7 +57,7 @@ body {
   flex-direction: column;
   flex: 100%;
   background-color: #61bdfa;
-  background: url(../images/Game-Area-Image.jpg) no-repeat center;
+  background: url(../images/Game-Area-Image.webp) no-repeat center;
   background-size: cover;
   max-width: 500px;
   min-height: 300px;
@@ -130,7 +130,7 @@ body {
   width: 76px;
   height: 120px;
   border-radius: 10px;
-  background: url(../images/Back-of-Card-Image.jpg) no-repeat center;
+  background: url(../images/Back-of-Card-Image.webp) no-repeat center;
 }
 
 .card {
