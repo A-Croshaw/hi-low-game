@@ -8,37 +8,36 @@
 # _Content Menu_
 
 1. [Features](#features)
-    1. [Elements on all pages](#elements-on-all-pages)
-        1. [The background](#1---the-background)
-        2. [Page Header and Navigation Bar](#2---page-header-and-navigation-bar)
+    1. [Elements](#elements)
+        1. [The Background](#1---the-background)
+        2. [Main Header](#2---main-header)
         3. [The Headers](#3---the-headers)
         4. [The Footer](#4---the-footer)
-        5. [Favicon](#5---favicon)
-    2. [The Landing Page](#the-landing-page)
-        1. [Landing Page Image](#landing-page-image)
+        5. [The Buttons](#5---the-buttons)
+        6. [Favicon](#6---favicon)
+    2. [The Game Content](#the-game-content)
         2. [The Main Content](#the-main-content)
     7. [404 Page](#404-page)
     8. [Implemented Features](#implemented-features)
     9. [Features to be Implemented](#features-to-be-implemented)
 2. [Design](#design)
     1. [Index Page](#index-page)
-3. [Bugs, Testing, and Validation](#bugs-testing-and-validation)
-    1. [Bugs](#bugs)
-    2. [Testing](#testing)
-        1. [Responsiveness](#responsiveness)
-        2. [Navigation, External Links, and User Input Testing](#navigation-external-links-and-user-input-testing)
-    3. [Accessibility](#accessibility)
-    4. [Validation](#validation)
-        1. [HTML Validation](#html-validation)
-        2. [CSS Validation](#css-validation)
-        3. [Lighthouse Reports](#lighthouse-reports)
-            1. [Desktop](#desktop)
-            2. [Mobile](#mobile)
-4. [Depolyment](#deployment)
+3. [Bugs](#bugs)
+4. [Testing](#testing)
+    1. [Responsiveness](#responsiveness)
+    2. [Navigation, External Links, and User Input Testing](#navigation-external-links-and-user-input-testing)
+5. [Accessibility](#accessibility)
+6. [Validation](#validation)
+    1. [HTML Validation](#html-validation)
+    2. [CSS Validation](#css-validation)
+    3. [Lighthouse Reports](#lighthouse-reports)
+        1. [Desktop](#desktop)
+        2. [Mobile](#mobile)
+7. [Depolyment](#deployment)
     1. [Version Control](#page-deployment)
     2. [Page Deployment](#page-deployment)
     3. [Cloning Repository](#cloning-repository)
-5. [Credits](#credits)
+8. [Credits](#credits)
     1. [Content and Media](#content-and-media)
     2. [Code](#code)
 
@@ -46,44 +45,47 @@
 
 ## _Elements_
 
-These features are across all of the pages, giving a basic structure that gives the user a more pleasant experience and which are able to easly navigate throught out the website.
+The elements to this feature game are as followed:
 
-### _1 - The background_
+### _1 - The Background_
 
- * 
+ * The main background is a soft light blue #38d9f538 to make the main game area stand out 
 
- * 
+ * whilst the background image to the game area is not visualy over powering to the rest of the elements within the game area.
 
- * 
+![Game-Area-Image](documents/readme-images/Game-Area-Image.webp)
 
-![Background-Image](documents/readme-images/image.webp)
+### _2 - Main Header_
 
-### _2 - Page Header _
+ * The main header is a simple black h2 element with the font of  "Bad Script" that is imported from Google fonts.
 
- * There is a header that has a black background and white text above the navigation bar. 
+![Header](documents/readme-images/Header.png)
 
+### _3 - The header_
 
-![Navigation Bar](documents/readme-images/)
+ * The headers that are within the infomation window are yellow #f8df00. With the font of  "Bad Script" that is imported from Google fonts.
 
-### _3 - The Header_
-
- * 
-
-![Headers](documents/readme-images/)
+![Game Information Headers](documents/readme-images/Info-Header.png)
 
 ### _4 - The Footer_
 
- * The footer consists of two social media links one to facebook and the other to instagram.
+ * The footer reads "Hi Low Game Github Repository" which link to the github repository for this game.
 
-![Footer](documents/readme-images/)
+ * It is just a simple text format using the font "Bad Script" that is imported from Google fonts.
 
-### _5 - Favicon_
+![Footer](documents/readme-images/Footer.png)
 
- * The favicon icon indicates to the user what the tab is when they have several tabs open.
+### _5 - The Footer_
+
+### _6 - Favicon_
+
+ * 
 
  * 
 
 ![Favicon](documents/readme-images/favicon.ico)
+
+## _The Game Content_
 
 ### _The Main Content_
 
@@ -153,15 +155,13 @@ These features are across all of the pages, giving a basic structure that gives 
 
  ![Index](documents/readme-images/index.png)
 
-# _Bugs, Testing, and Validation_
-
-## _Bugs_
+# _Bugs_
 
  * There are no known bugs within the site after testing on multiple devises.
 
-## _Testing_
+# _Testing_
 
-### _Responsiveness_
+## _Responsiveness_
 
  * The site has been tested on Edge, Safari, Chrome, Firefox, and Opera.
 
@@ -178,7 +178,7 @@ These features are across all of the pages, giving a basic structure that gives 
  * None of the content overlaps when screen size reduces.
 
 
-### _Navigation, External Links, and User Input Testing_
+## _Navigation, External Links, and User Input Testing_
 
  * These have been tested on Edge, Safari, Chrome, Firefox, and Opera
 
@@ -186,7 +186,7 @@ These features are across all of the pages, giving a basic structure that gives 
 
  * All navigation, external links, and user inputs work across all responsive screen sizes and on all tested devices.
 
-## _Accessibility_
+# _Accessibility_
 
  * The page accessibility was checked using [Wave](https://wave.webaim.org/)
 
@@ -198,29 +198,29 @@ These features are across all of the pages, giving a basic structure that gives 
 
 ![index-wave](documents/readme-images/wave-check.png)
 
-## _Validation_
+# _Validation_
 
-### _HTML Validation_
+## _HTML Validation_
 
 * The HTML on all pages passed through the [W3C validator](https://validator.w3.org/) without any errors.
 
 ![HTML validation](documents/readme-images/HTML-validation.png)
 
-### _CSS Validation_
+## _CSS Validation_
 
 * The CSS code passed through the [Jigsaw validator](https://jigsaw.w3.org/css-validator/) without any errors.
 
 ![CSS validation](documents/readme-images/css-validation.png)
 
-### _Lighthouse Reports_
+## _Lighthouse Reports_
 
-#### _Desktop_
+### _Desktop_
 
  * index.html
 
 ![Lighthouse Desktop](documents/readme-images/lighthouse-desktop.png)
 
-#### _Mobile_
+### _Mobile_
 
  * index.html
 
