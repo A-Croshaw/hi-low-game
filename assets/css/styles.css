@@ -68,7 +68,6 @@ body {
 .info-section {
   display: flex;
   flex: 100%;
-  ;
   justify-content: space-between;
   flex-direction: row;
 
@@ -99,10 +98,9 @@ body {
   align-self: center;
 }
 
-#game-text,
 .score p,
 #game-text {
-  background-color: rgba(255, 238, 0, 0.699);
+  background-color: #ffee00b2;
 }
 
 #game-text,

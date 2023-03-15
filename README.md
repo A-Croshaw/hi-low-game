@@ -123,7 +123,7 @@ The elements to this feature game are as followed:
  * With the background as a lightly transparent yellow #ffee00b2.
  * The text has a font of 'Rampart One' which is imported from google fonts.
 
-![Scores](documents/readme-images/Scores-2.png)
+![Scores](documents/readme-images/Scores.png)
 
 ### _7 - Game Text_
 * The Game test area is placed above the card in the middle of the game area.
@@ -164,11 +164,18 @@ The elements to this feature game are as followed:
 
 ## _Implemented Features_
  
- * 
+ * The responsiveness of the site is 280px and up.
 
- * 
-
- * 
+ * All external links open up as they should on all devices.
+ 
+ * Buttons that call different functions to operate the game.
+ 
+ * Element to track a users higest score within that game session.
+ (not linked to external storage to keep highest score from refreshing when page reloads) 
+ 
+ * 404 page to let the user know there is a broken link or a mistype in the URL.
+ 
+ * 404 page has a navigation bar and also a link in content to return to the main content of the site. 
  
 ## _Features to be Implemented_
 
