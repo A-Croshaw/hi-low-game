@@ -1,32 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Poppins:wght@300&family=Rampart+One&display=swap');
 
-*{
-    margin:0;
-    padding:0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    flex:100%;    
-    flex-direction: column;
-    flex-wrap: wrap;
-    background-color: rgba(56, 217, 245, 0.219);
-    color: #000000;
-    text-align: center;
-    font-family: 'Bad Script', cursive, sans-serif;
-    justify-content: space-around;
-    align-items: center;
+body {
+  flex-direction: column;
+  background-color: rgba(56, 217, 245, 0.219);
+  color: #000000;
+  text-align: center;
+  font-family: 'Bad Script', cursive, sans-serif;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.box{
-    display: flex;
-    flex: 100%;
-    flex-wrap: wrap;
+.box {
+  display: flex;
+  flex: 100%;
+  flex-wrap: wrap;
 }
- 
- 
+
 /*--Game rules/ Welcome--*/
 
- .game-rules{
+.game-rules {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
@@ -35,45 +32,55 @@ body{
   color: #f8df00;
   background-color: #000000c4;
   min-height: 200px;
-  max-width: 455px;
+  max-width: 430px;
   position: absolute;
- }
+}
 
- .rule-text{
+.rule-text {
   font-family: 'Poppins', sans-serif;
   font-size: 15px;
-  font-weight: 600;
-  line-height: 25px;
+  font-weight: 400;
+  line-height: 20px;
   padding-bottom: 5px;
   margin: 13px;
 
- }
- .game-rules h3{
-  font-size:20px;
-  line-height: 25px;
- }
+}
 
- /*--Main Game Board Section--*/
+.game-rules h2 {
+  font-size: 20px;
+  line-height: 27px;
+}
 
-.game-board{
-    flex-direction: column;
-    flex: 100%;
-    background-color: #61bdfa;
-    background: url(../images/Game-Area-Image.jpg) center;
-    max-width: 500px;
-    min-height: 300px;
-    padding: 10px;
+/*--Main Game Board Section--*/
+
+.game-board {
+  flex-direction: column;
+  flex: 100%;
+  background-color: #61bdfa;
+  background: url(../images/Game-Area-Image.jpg) no-repeat center;
+  background-size: cover;
+  max-width: 500px;
+  min-height: 300px;
+  padding: 10px;
 }
 
 /*--Score Area and in Game Text--*/
+.info-section {
+  display: flex;
+  flex: 100%;
+  ;
+  justify-content: space-between;
+  flex-direction: row;
 
-.score{
+}
+
+.score {
   flex-direction: row;
   padding: 5px;
   margin-top: 5px;
 }
 
-.score p{
+.score p {
   min-width: 90px;
   text-align: left;
   font-family: 'Rampart One', cursive, sans-serif;
@@ -83,20 +90,23 @@ body{
 }
 
 
-#game-text{
+#game-text {
   flex-direction: row;
-  font-size: 18px;
+  font-size: 25px;
   font-weight: 600;
   margin-top: 5px;
-  width: 200px;
+  width: 250px;
   align-self: center;
 }
 
-#game-text, .score p, #game-text{
+#game-text,
+.score p,
+#game-text {
   background-color: rgba(255, 238, 0, 0.699);
 }
 
-#game-text, .score p{
+#game-text,
+.score p {
   padding: 2px 6px;
   min-width: 90px;
   border-radius: 20px;
@@ -105,25 +115,25 @@ body{
 /*--Card Area and Card Styling--*/
 
 .card-placement-area {
-    margin: 0;
-    flex:100%;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    gap: 5px;
-    padding: 5px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+  margin: 0;
+  flex: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5px;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
-.cardback{
-    width:76px;
-    height: 120px;    
-    border-radius: 10px;
-    background: url(../images/Back-of-Card-Image.jpg) no-repeat center;
+.cardback {
+  width: 76px;
+  height: 120px;
+  border-radius: 10px;
+  background: url(../images/Back-of-Card-Image.jpg) no-repeat center;
 }
 
-.card{
+.card {
   position: relative;
   height: 100%;
   width: 100%;
@@ -134,7 +144,7 @@ body{
   align-items: center;
   font-size: 60px;
   font-weight: 600;
-  background-color: rgb(137, 255, 255);    
+  background-color: rgb(137, 255, 255);
 }
 
 .card.red {
@@ -155,7 +165,7 @@ body{
 .card::before {
   top: 7px;
   left: 7px;
-  
+
 }
 
 .card::after {
@@ -165,18 +175,34 @@ body{
 }
 
 
-.start-btn, .rule-btn, .hi-btn, .low-btn, .cardback, .card, .play-btn, .how-to-play-btn{
-    border: 1px  solid #faf761;
+.start-btn,
+.rule-btn,
+.hi-btn,
+.low-btn,
+.cardback,
+.card,
+.play-btn,
+.how-to-play-btn {
+  border: 1px solid #faf761;
 }
-  /*--Game Buttons--*/
 
-.start-btn, .rule-btn, .hi-btn, .low-btn, .play-btn, .how-to-play-btn{
-    color: rgb(255, 230, 0);
-    cursor: pointer;
-    background-color: #04033b;   
+/*--Game Buttons--*/
+
+.start-btn,
+.rule-btn,
+.hi-btn,
+.low-btn,
+.play-btn,
+.how-to-play-btn {
+  color: rgb(255, 230, 0);
+  cursor: pointer;
+  background-color: #04033b;
 }
 
-.start-btn, .hi-btn, .low-btn, .play-btn{
+.start-btn,
+.hi-btn,
+.low-btn,
+.play-btn {
   font-size: 15px;
   font-weight: 1000;
   letter-spacing: 5px;
@@ -187,7 +213,8 @@ body{
   text-transform: uppercase;
 }
 
-.play-btn, .how-to-play-btn{
+.play-btn,
+.how-to-play-btn {
   height: 30px;
   padding-top: 1px;
   padding-left: 1px;
@@ -195,71 +222,85 @@ body{
   border-radius: 2px 15px;
 }
 
-.hi-btn, .low-btn { 
-    width: 70px;
-    border-radius: 20px 1px;
+.hi-btn,
+.low-btn {
+  width: 70px;
+  border-radius: 20px 1px;
 }
-.how-to-play-btn{
+
+.how-to-play-btn {
   font-weight: 1000;
   letter-spacing: 1px;
   font-size: 13px;
   font-family: 'Bad Script', cursive, sans-serif;
   text-transform: uppercase;
 }
-.start-btn{
+
+.main-btns {
+  display: flex;
+  flex-direction: column;
+}
+
+.start-btn {
   width: 130px;
   border-radius: 2px 15px;
 }
 
-.rule-btn{
+.rule-btn {
   width: 50px;
   border-radius: 2px 15px;
   height: 35px;
 }
 
-.game-rule-btn{
+.game-rule-btn {
   display: flex;
   flex-direction: row;
-  justify-content:space-around;
-  gap:5px
+  justify-content: space-around;
+  gap: 5px
 }
 
-.info-section{
-  display: flex;
-  flex: 100%;;
-  justify-content:space-between;
-  flex-direction: row;
-
-}
-
-.start-btn:hover, .restart-btn:hover, .hi-btn:hover, .low-btn:hover, .play-btn:hover, .play-btn:hover, .rule-btn:hover{
+.start-btn:hover,
+.restart-btn:hover,
+.hi-btn:hover,
+.low-btn:hover,
+.play-btn:hover,
+.play-btn:hover,
+.rule-btn:hover {
   background-color: #06056d;
 }
 
-.main-btns{
-  display: flex;
-  flex-direction: column;
-}
-
-#ingame-btn{
+#ingame-btn {
   justify-content: space-evenly;
 }
 
-@media screen and (min-width: 650px) {
+/*--Media Queries--*/
+@media screen and (min-width: 450px) {
   .card-placement-area {
-    gap:10px
+    gap: 10px
   }
 }
 
 @media screen and (min-width: 550px) {
-  .how-to-play-btn,.play-btn{
-    width:120px;
+
+  .how-to-play-btn,
+  .play-btn {
+    width: 120px;
   }
-  .game-rule-btn{
+
+  .game-rule-btn {
     gap: 20px;
   }
-  .cardback{
-    width:85px;
+
+  .cardback {
+    width: 85px;
     height: 135px;
+  }
+
+  .card-placement-area {
+    gap: 10px
+  }
+
+  .game-rules {
+    max-width: 475px;
   }
 }
