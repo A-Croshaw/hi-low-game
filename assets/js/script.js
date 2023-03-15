@@ -21,7 +21,7 @@ const cardTwo = document.querySelector('.card-2');
 const cardThree = document.querySelector('.card-3');
 const cardFour = document.querySelector('.card-4');
 const cardFive = document.querySelector('.card-5');
-
+const text = document.getElementById('text');
 let cardCounter = 0;
 let cardSlotOne, cardSlotTwo, cardSlotThree, cardSlotFour, cardSlotFive, ruleText;
 let items = [];
@@ -38,7 +38,7 @@ document.getElementById('how-to-play').addEventListener('click', howToPlay);
 document.getElementById('rule-btn').addEventListener('click', showRules);
 document.getElementById('current-score').innerText = "0";
 document.getElementById("high-score").innerText = "0";
-document.getElementById('text').innerText = "Press Start To Begin";
+text.innerText = "Press Start To Begin";
 
 function startGame() {
     cardOne.innerHTML = "";
@@ -93,7 +93,7 @@ function showRules() {
 
 }
 
-howToPlay()
+howToPlay();
 
 function hideRules() {
     document.getElementById("game-rules").style.visibility = 'hidden';
@@ -149,7 +149,7 @@ function higherCard() {
             cardSetTwo();
         } else {
             incorrect();
-            cardFive.appendChild(cardSlotFive.cardHTML())
+            cardFive.appendChild(cardSlotFive.cardHTML());
         }
     } else if (cardCounter === 5) {
         if (higherCardCheck(cardSlotOne, cardSlotTwo)) {
@@ -178,7 +178,7 @@ function higherCard() {
             cardSetThree();
         } else {
             incorrect();
-            cardFive.appendChild(cardSlotFive.cardHTML())
+            cardFive.appendChild(cardSlotFive.cardHTML());
         }
     } else if (cardCounter === 9) {
         if (higherCardCheck(cardSlotOne, cardSlotTwo)) {
@@ -192,7 +192,7 @@ function higherCard() {
             cardTwoThreeCheck();
         } else {
             incorrect();
-            cardThree.appendChild(cardSlotThree.cardHTML())
+            cardThree.appendChild(cardSlotThree.cardHTML());
         }
     } else if (cardCounter === 11) {
         if (higherCardCheck(cardSlotThree, cardSlotFour)) {
@@ -229,7 +229,7 @@ function lowerCard() {
             cardTwoThreeCheck();
         } else {
             incorrect();
-            cardThree.appendChild(cardSlotThree.cardHTML())
+            cardThree.appendChild(cardSlotThree.cardHTML());
         }
     } else if (cardCounter === 3) {
         if (lowerCardCheck(cardSlotThree, cardSlotFour)) {
@@ -274,7 +274,7 @@ function lowerCard() {
             cardSetThree();
         } else {
             incorrect();
-            cardFive.appendChild(cardSlotFive.cardHTML())
+            cardFive.appendChild(cardSlotFive.cardHTML());
         }
     } else if (cardCounter === 9) {
         if (lowerCardCheck(cardSlotOne, cardSlotTwo)) {

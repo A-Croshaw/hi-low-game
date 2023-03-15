@@ -5,20 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--CSS Link-->
+    <!--CSS Link-->
     <link rel="stylesheet" href="assets/css/styles.css">
     <title>Hi-Low Game</title>
 </head>
 
 <body class="box">
-<!--header-->
+    <!--header-->
     <header class="box">
         <h1>
             Hi or Low
         </h1>
     </header>
     <main>
-<!--Game Information section-->
+        <!--Game Information section-->
         <div class="game-rules box" id="game-rules">
             <h2>Welcome to HI and LOW</h2>
             <h2 id="rule-header">Game Rules</h2>
@@ -29,35 +29,36 @@
                 <p id="rule-text-4"></p>
                 <p id="rule-text-5"></p>
             </div>
-<!--Buttons within information section-->
+            <!--Buttons within information section-->
             <div class="game-rule-btn">
                 <button data-type="submit" id="play-btn" class="play-btn">Play</button>
                 <button data-type="submit" id="how-to-play" class="how-to-play-btn"></button>
             </div>
         </div>
-<!--Main game Board-->
+        <!--Main game Board-->
         <div id="game" class="game-board box">
             <div class="main-btns box">
-<!--Start button for game-->
+                <!--Start button for game-->
                 <div class="start-box">
                     <button data-type="submit" id="start-button" class="start-btn">start</button>
                 </div>
             </div>
-<!--Score and Information button-->
+            <!--Score and Information button-->
             <div class="info-section">
                 <div class="score">
                     <p>High Score: <span id="high-score">0</span></p>
                     <p>Your Score: <span id="current-score">0</span></p>
                 </div>
                 <div>
-                    <button data-type="submit" id="rule-btn" class="rule-btn" aria-label="Information button"><i class="fas fa-info"></i></button>
+                    <button data-type="submit" id="rule-btn" class="rule-btn" aria-label="Information button"><i
+                            class="fas fa-info"></i></button>
                 </div>
             </div>
-<!--In game Text-->
+            <!--In game Text-->
             <div id="game-text">
                 <p id="text">Congratulations You Win</p>
             </div>
-<!--Card placement-->
+            <!--Card placement-->
             <div class="card-placement-area box">
                 <div class=" card-1 cardback">
                 </div>
@@ -70,24 +71,20 @@
                 <div class="card-5 cardback">
                 </div>
             </div>
-<!--Hi and LOw buttons-->
+            <!--Hi and LOw buttons-->
             <div id="ingame-btn" class="box">
                 <button data-type="submit" id="hi-button" class="hi-btn">Hi</button>
                 <button data-type="submit" id="low-button" class="low-btn">Low</button>
             </div>
         </div>
     </main>
-<!--Footer..link to Github repository-->
+    <!--Footer..link to Github repository-->
     <footer>
-        <a
-            href="https://github.com/A-Croshaw/hi-low-game"
-            target="_blank"
-            rel="noopener"
-            aria-label="Github repository"
-            > Hi Low Game Github Repository
-          </a>
+        <a href="https://github.com/A-Croshaw/hi-low-game" target="_blank" rel="noopener"
+            aria-label="Github repository"> Hi Low Game Github Repository
+        </a>
     </footer>
-<!--Fontawesome ans js script links-->
+    <!--Fontawesome ans js script links-->
     <script src="https://kit.fontawesome.com/c7dbda0798.js" crossorigin="anonymous"></script>
     <script src="assets/js/script.js" type="module"></script>
 </body>

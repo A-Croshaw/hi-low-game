@@ -128,7 +128,7 @@ The elements to this feature game are as followed:
 * The Text has the font "Bad Script" that is imported from Google fonts.
 * With the background as a lightly transparent yellow #ffee00b2.
 
-![Game Text](documents/readme-images/Game-text.png)
+![Game Text](documents/readme-images/Game-Text.png)
 
 ### _8 - Cards_
 
@@ -183,7 +183,7 @@ The elements to this feature game are as followed:
  * The information window will be accessible via a button on the main game area.
  * The information button will be placed in the top right hand corner of the game area.
 
- ![Wire Frame](documents/readme-images/Game-design1.png)
+ ![Wire Frame](documents/readme-images/Game-Design1.png)
 
  * With in the main game area there will be a high score and a current score to the left top coner.
  * The start/restart button will be to the top center.
@@ -193,12 +193,11 @@ The elements to this feature game are as followed:
  * All cards displayed when revealed will represent a card from a normal deck of cards.
  * Below the cards there will be a hi and low button for user to select to play the game.
 
- ![Wire Frame](documents/readme-images/Game-design.png)
- 
+ ![Wire Frame](documents/readme-images/Game-Design.png)
+
 # _Bugs_
 
- * There are no known bugs within the site after testing on multiple devises.
- 
+ * There are no known bugs within the site after testing on multiple devices.
  * An exterme hi and low section that goes through a full 52 cards. 
 
 # _Testing_
@@ -206,39 +205,28 @@ The elements to this feature game are as followed:
 ## _1 - Responsiveness_
 
  * The site has been tested on Edge, Safari, Chrome, Firefox, and Opera.
-
  * Devices the site has been tested on are Samsung 22 + 10 lite, Iphone 11 + 13, PC, and Lenovo tablet.
-
  * The site has been fully tested using google developer on all screen sizes from 280px and up.
-
  * The site is fully responsive across all the devices with the screens vertically and horizontally.
-
  * There are no horizontal scrolls when tested across these devices.
-
  * The images do not become pixelated.
- 
  * None of the content overlaps when screen size reduces.
 
 
 ## _2 - Navigation, External Links, and User Input Testing_
 
  * These have been tested on Edge, Safari, Chrome, Firefox, and Opera
-
  * Devices these have been tested on are Samsung 22 + 10 lite, Iphone 11 + 13, PC, and Lenovo tablet.
-
  * All navigation, external links, and user inputs work across all responsive screen sizes and on all tested devices.
 
 # _Accessibility_
 
  * The page accessibility was checked using [Wave](https://wave.webaim.org/)
-
  * Index.html has one alert for saying text maybe a heading when it was not.
- 
  * All links have proper aria labels.
+ * There is no conflicts with the contrast of colours.
 
-* There is no conflicts with the contrast of colours.
-
-![index-wave](documents/readme-images/wave-check.png)
+![index-wave](documents/readme-images/Wave-Check.png)
 
 # _Validation_
 
@@ -246,13 +234,25 @@ The elements to this feature game are as followed:
 
 * The HTML on all pages passed through the [W3C validator](https://validator.w3.org/) without any errors.
 
-![HTML validation](documents/readme-images/HTML-validation.png)
+![HTML validation](documents/readme-images/HTML-Validation.png)
 
 ## _2 - CSS Validation_
 
 * The CSS code passed through the [Jigsaw validator](https://jigsaw.w3.org/css-validator/) without any errors.
 
-![CSS validation](documents/readme-images/css-validation.png)
+![CSS validation](documents/readme-images/CSS-Validation.png)
+
+## _2 - JavaScript Validation_
+
+* The JavaScript code passed through the [JSHint](https://https://jshint.com/) without any errors.
+
+### 1 - script.js
+
+![JavaScript validation](documents/readme-images/JavaScript-Validation.png)
+
+### 2 - card-deck.js
+
+![JavaScript validation](documents/readme-images/JavaScript-Cards-Validation.png)
 
 ## _3 - Lighthouse Reports_
 
@@ -260,13 +260,13 @@ The elements to this feature game are as followed:
 
  * index.html
 
-![Lighthouse Desktop](documents/readme-images/lighthouse-desktop.png)
+![Lighthouse Desktop](documents/readme-images/Lighthouse-Desktop.png)
 
 ### _2 - Mobile_
 
  * index.html
 
-![Lighthouse Mobile](documents/readme-images/lighthouse-mobile.png)
+![Lighthouse Mobile](documents/readme-images/Lighthouse-Mobile.png)
 
 # _Deployment_
 

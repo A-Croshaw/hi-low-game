@@ -34,7 +34,7 @@ class newCard {
   }
 
   cardHTML() {
-    const cardElement = document.createElement("div")
+    const cardElement = document.createElement("div");
     cardElement.innerText = this.suit;
     cardElement.classList.add("card", this.color);
     cardElement.dataset.value = `${this.value} ${this.suit}`;
@@ -45,7 +45,7 @@ class newCard {
 function creatDeck() {
   return suit.flatMap(suit => {
     return cardValue.map(value => {
-      return new newCard(suit, value)
-    })
+      return new newCard(suit, value);
+    });
   });
 }
