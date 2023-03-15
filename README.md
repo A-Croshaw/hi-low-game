@@ -14,9 +14,14 @@
         3. [The Headers](#3---the-headers)
         4. [The Footer](#4---the-footer)
         5. [The Buttons](#5---the-buttons)
-        6. [Favicon](#6---favicon)
-    2. [The Game Content](#the-game-content)
-        2. [The Main Content](#the-main-content)
+            1. [Game Information Buttons](#1---game-information-buttons)
+            2. [Start and Restart Buttons](#2---start-and-restart-buttons)
+            3. [Hi and low Buttons](#3---hi-and-low-buttons)
+        6. [Scores](#6---scores)
+        7. [Game Text](#7---game-text)
+        8. [Cards](#8---cards)
+        9. [Information Window](#9---information-window)
+        10. [Favicon](#10---favicon)
     7. [404 Page](#404-page)
     8. [Implemented Features](#implemented-features)
     9. [Features to be Implemented](#features-to-be-implemented)
@@ -24,22 +29,22 @@
     1. [Index Page](#index-page)
 3. [Bugs](#bugs)
 4. [Testing](#testing)
-    1. [Responsiveness](#responsiveness)
-    2. [Navigation, External Links, and User Input Testing](#navigation-external-links-and-user-input-testing)
+    1. [Responsiveness](#1---responsiveness)
+    2. [Navigation, External Links, and User Input Testing](#2---navigation-external-links-and-user-input-testing)
 5. [Accessibility](#accessibility)
 6. [Validation](#validation)
-    1. [HTML Validation](#html-validation)
-    2. [CSS Validation](#css-validation)
-    3. [Lighthouse Reports](#lighthouse-reports)
-        1. [Desktop](#desktop)
-        2. [Mobile](#mobile)
+    1. [HTML Validation](#1---html-validation)
+    2. [CSS Validation](#2---css-validation)
+    3. [Lighthouse Reports](#3---lighthouse-reports)
+        1. [Desktop](#1---desktop)
+        2. [Mobile](#2---mobile)
 7. [Depolyment](#deployment)
-    1. [Version Control](#page-deployment)
-    2. [Page Deployment](#page-deployment)
-    3. [Cloning Repository](#cloning-repository)
+    1. [Version Control](#1---page-deployment)
+    2. [Page Deployment](#2---page-deployment)
+    3. [Cloning Repository](#3---cloning-repository)
 8. [Credits](#credits)
-    1. [Content and Media](#content-and-media)
-    2. [Code](#code)
+    1. [Content and Media](#1---content-and-media)
+    2. [Code](#2---code)
 
 # _Features_
 
@@ -75,33 +80,51 @@ The elements to this feature game are as followed:
 
 ![Footer](documents/readme-images/Footer.png)
 
-### _5 - The Footer_
+### _5 - The Buttons_
 
-### _6 - Favicon_
+ * All the buttons through the game have the same style.
+ * They are a beep blue color #04033b and when hovered over change to a lighter blue #06056d.
+ * They all consist of yellow text #ffe600.
+ * They all consist of a sold yellow border #faf761.
+ * They all have all have two coners rounded.
 
- * 
+#### _1 - Game Information Buttons_
+
+ * Within the game information section shows two buttons a "play" and "how to play".
+ * When the "how to play" button is pressed it changes to the "game rules" button.
+ * When the "play" button is press it hides the information window to allow you to play the game.
+
+![Game Information Buttons](documents/readme-images/Buttons-1.png)
+![Game Information Buttons](documents/readme-images/Buttons-6.png)
+
+ * Within the main game area the "i" button opens up the information window.
+
+![Game Information Buttons](documents/readme-images/Buttons-5.png)
+
+#### _2 - Start and Restart Buttons_
+
+ * Within the main game area the "start" button will show soon as the information window is closed.
+ * When the start button is pressed the "restart" button will show which will remain untill the game is fully restarted.
+
+![Start button](documents/readme-images/Buttons-2.png)
+![Restart button](documents/readme-images/Buttons-3.png)
+
+#### _3 - Hi and Low Buttons_
+
+ * The "hi" and "low buttons only appear once the start button is pressed.
+ * The "hi" and "low" buttons are allow yopu to select hi or low options when the game is started. 
+
+![Hi and Low Buttons](documents/readme-images/Buttons-4.png)
+
+### _6 - Scores_
+### _7 - Game Text_
+### _8 - Cards_
+### _9 - Information Window_
+### _10 - Favicon_
 
  * 
 
 ![Favicon](documents/readme-images/favicon.ico)
-
-## _The Game Content_
-
-### _The Main Content_
-
- * 
-
- * 
-
- * 
-
- * 
-
- * 
-
- * 
-
-
 
 
 ## _404 Page_
@@ -124,44 +147,17 @@ The elements to this feature game are as followed:
 
  * 
  
- * 
- 
- * 
- 
- * 
- 
- * 
-
 ## _Features to be Implemented_
-
- * 
-
- * 
-
- *  
-
- * 
 
 # _Design_
  
-
-## _Index Page_
-
- * 
- 
- * 
-
- * 
-
- ![Index](documents/readme-images/index.png)
-
 # _Bugs_
 
  * There are no known bugs within the site after testing on multiple devises.
 
 # _Testing_
 
-## _Responsiveness_
+## _1 - Responsiveness_
 
  * The site has been tested on Edge, Safari, Chrome, Firefox, and Opera.
 
@@ -178,7 +174,7 @@ The elements to this feature game are as followed:
  * None of the content overlaps when screen size reduces.
 
 
-## _Navigation, External Links, and User Input Testing_
+## _2 - Navigation, External Links, and User Input Testing_
 
  * These have been tested on Edge, Safari, Chrome, Firefox, and Opera
 
@@ -200,27 +196,27 @@ The elements to this feature game are as followed:
 
 # _Validation_
 
-## _HTML Validation_
+## _1 - HTML Validation_
 
 * The HTML on all pages passed through the [W3C validator](https://validator.w3.org/) without any errors.
 
 ![HTML validation](documents/readme-images/HTML-validation.png)
 
-## _CSS Validation_
+## _2 - CSS Validation_
 
 * The CSS code passed through the [Jigsaw validator](https://jigsaw.w3.org/css-validator/) without any errors.
 
 ![CSS validation](documents/readme-images/css-validation.png)
 
-## _Lighthouse Reports_
+## _3 - Lighthouse Reports_
 
-### _Desktop_
+### _1 - Desktop_
 
  * index.html
 
 ![Lighthouse Desktop](documents/readme-images/lighthouse-desktop.png)
 
-### _Mobile_
+### _2 - Mobile_
 
  * index.html
 
@@ -228,7 +224,7 @@ The elements to this feature game are as followed:
 
 # _Deployment_
 
-## _Version Control_
+## _1 - Version Control_
 
  * From the Gitpod terminal use "git add ." which tells git you would like to make changes/updates to the files.
 
@@ -236,7 +232,7 @@ The elements to this feature game are as followed:
 
  * Then using the "git push" command this will push the committed changes to your GitHub repository.
 
-## _Page Deployment_
+## _2 - Page Deployment_
 
  * Load up the GitHub website and log in to your account
  
@@ -250,19 +246,19 @@ The elements to this feature game are as followed:
 
  Visit the live deployment of the site [HERE](https://a-croshaw.github.io/hi-low-game/).
 
-## _Cloning Repository_
+## _3 - Cloning Repository_
 
  * To clone the repository for download or use within your GitHub head-over to this link https://github.com/git-guides/git-clone
 
 # _Credits_
 
-## _Content and Media_
+## _ 1 - Content and Media_
 
  *  The image used for the back of the card was taken from [Pixabay](https://pixabay.com/illustrations/ai-generated-baby-dragon-cute-7705365/) and is free licensed under the Pixabay licensing condtions.
 
  * The image used fro the background of the game are is from [Wallpapers.com](https://wallpapers.com/wallpapers/blue-and-red-fire-j9nfqyrlnhxznmh5.html) with under there licensing the image is only for personal use. As this is a personal and project for education perpose this image can not be published out side of this scope.
 
-## _Code_
+## _2 - Code_
 
  * For the font style's Prata and Slabo, These are from [Google-Fonts](https://fonts.google.com/).
  

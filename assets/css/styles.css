@@ -194,7 +194,7 @@ body {
 .low-btn,
 .play-btn,
 .how-to-play-btn {
-  color: rgb(255, 230, 0);
+  color: #ffe600;
   cursor: pointer;
   background-color: #04033b;
 }
