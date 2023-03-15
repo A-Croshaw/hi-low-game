@@ -204,7 +204,7 @@ function higherCard() {
     } else if (cardCounter === 12) {
         if (higherCardCheck(cardSlotFour, cardSlotFive)) {
             cardFourFiveCheck();
-            text.innerText = "Congratulations You win";
+            text.innerText = "Congratulations You Win";
             hideLowHightButtons();
         } else {
             incorrect();
@@ -300,7 +300,7 @@ function lowerCard() {
     } else if (cardCounter === 12) {
         if (lowerCardCheck(cardSlotFour, cardSlotFive)) {
             cardFourFiveCheck();
-            text.innerText = "Congratulations You win";
+            text.innerText = "Congratulations You Win";
             hideLowHightButtons();
         } else {
             incorrect();

@@ -1,108 +1,281 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# _HI LOW GAME _
 
-Welcome ACroshaw88,
+![Mock-up-Image](documents/readme-images/)
+[__Click here to view published site__](https://a-croshaw.github.io/hi-low-game/)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+# _Content Menu_
 
-## Gitpod Reminders
+1. [Features](#features)
+    1. [Elements on all pages](#elements-on-all-pages)
+        1. [The background](#1---the-background)
+        2. [Page Header and Navigation Bar](#2---page-header-and-navigation-bar)
+        3. [The Headers](#3---the-headers)
+        4. [The Footer](#4---the-footer)
+        5. [Favicon](#5---favicon)
+    2. [The Landing Page](#the-landing-page)
+        1. [Landing Page Image](#landing-page-image)
+        2. [The Main Content](#the-main-content)
+    7. [404 Page](#404-page)
+    8. [Implemented Features](#implemented-features)
+    9. [Features to be Implemented](#features-to-be-implemented)
+2. [Design](#design)
+    1. [Index Page](#index-page)
+3. [Bugs, Testing, and Validation](#bugs-testing-and-validation)
+    1. [Bugs](#bugs)
+    2. [Testing](#testing)
+        1. [Responsiveness](#responsiveness)
+        2. [Navigation, External Links, and User Input Testing](#navigation-external-links-and-user-input-testing)
+    3. [Accessibility](#accessibility)
+    4. [Validation](#validation)
+        1. [HTML Validation](#html-validation)
+        2. [CSS Validation](#css-validation)
+        3. [Lighthouse Reports](#lighthouse-reports)
+            1. [Desktop](#desktop)
+            2. [Mobile](#mobile)
+4. [Depolyment](#deployment)
+    1. [Version Control](#page-deployment)
+    2. [Page Deployment](#page-deployment)
+    3. [Cloning Repository](#cloning-repository)
+5. [Credits](#credits)
+    1. [Content and Media](#content-and-media)
+    2. [Code](#code)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+# _Features_
 
-`python3 -m http.server`
+## _Elements_
 
-A blue button should appear to click: _Make Public_,
+These features are across all of the pages, giving a basic structure that gives the user a more pleasant experience and which are able to easly navigate throught out the website.
 
-Another blue button should appear to click: _Open Browser_.
+### _1 - The background_
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+ * 
 
-A blue button should appear to click: _Make Public_,
+ * 
 
-Another blue button should appear to click: _Open Browser_.
+ * 
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+![Background-Image](documents/readme-images/image.webp)
 
-To log into the Heroku toolbelt CLI:
+### _2 - Page Header _
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+ * There is a header that has a black background and white text above the navigation bar. 
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
 
-------
+![Navigation Bar](documents/readme-images/)
 
-## Release History
+### _3 - The Header_
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+ * 
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+![Headers](documents/readme-images/)
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+### _4 - The Footer_
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+ * The footer consists of two social media links one to facebook and the other to instagram.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+![Footer](documents/readme-images/)
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+### _5 - Favicon_
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+ * The favicon icon indicates to the user what the tab is when they have several tabs open.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+ * 
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+![Favicon](documents/readme-images/favicon.ico)
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+### _The Main Content_
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+ * 
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+ * 
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+ * 
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+ * 
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+ * 
 
-------
+ * 
 
-## FAQ about the uptime script
 
-**Why have you added this script?**
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
 
-**How will this affect me?**
+## _404 Page_
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+ * This 404 page will be reached when a bad link or a miss-typed web address is loaded by the user.
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+ * It consists of the top header and navigation bar with logos so the user can navigate back to the website more easily.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+ * Also there is a link in the word here within the text that will take the user back to the home page.
 
-**So….?**
+ * This is all so the user does not have to use the back button on the browser or type the URL to return to the site.
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+![404 Image](documents/readme-images/)
 
-**Can I opt out?**
+## _Implemented Features_
+ 
+ * 
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+ * 
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+ * 
+ 
+ * 
+ 
+ * 
+ 
+ * 
+ 
+ * 
 
-**Anything more?**
+## _Features to be Implemented_
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+ * 
 
----
+ * 
 
-Happy coding!
+ *  
+
+ * 
+
+# _Design_
+ 
+
+## _Index Page_
+
+ * 
+ 
+ * 
+
+ * 
+
+ ![Index](documents/readme-images/index.png)
+
+# _Bugs, Testing, and Validation_
+
+## _Bugs_
+
+ * There are no known bugs within the site after testing on multiple devises.
+
+## _Testing_
+
+### _Responsiveness_
+
+ * The site has been tested on Edge, Safari, Chrome, Firefox, and Opera.
+
+ * Devices the site has been tested on are Samsung 22 + 10 lite, Iphone 11 + 13, PC, and Lenovo tablet.
+
+ * The site has been fully tested using google developer on all screen sizes from 280px and up.
+
+ * The site is fully responsive across all the devices with the screens vertically and horizontally.
+
+ * There are no horizontal scrolls when tested across these devices.
+
+ * The images do not become pixelated.
+ 
+ * None of the content overlaps when screen size reduces.
+
+
+### _Navigation, External Links, and User Input Testing_
+
+ * These have been tested on Edge, Safari, Chrome, Firefox, and Opera
+
+ * Devices these have been tested on are Samsung 22 + 10 lite, Iphone 11 + 13, PC, and Lenovo tablet.
+
+ * All navigation, external links, and user inputs work across all responsive screen sizes and on all tested devices.
+
+## _Accessibility_
+
+ * All page had their accessibility checked using [Wave](https://wave.webaim.org/)
+
+ * Index.html has one alert for the missing audio transcript.
+
+ * All other pages and areas passed the accessibility tests.
+    * All links have proper aria labels.
+    * All images have proper alt tags and none are the same.
+    * There is no conflicts with the contrast of colours.
+
+![index-wave](documents/readme-images/index-wave.png)
+
+## _Validation_
+
+### _HTML Validation_
+
+* The HTML on all pages passed through the [W3C validator](https://validator.w3.org/) without any errors.
+
+![HTML validation](documents/readme-images/index-validation.png)
+
+### _CSS Validation_
+
+* The CSS code passed through the [Jigsaw validator](https://jigsaw.w3.org/css-validator/) without any errors.
+
+![CSS validation](documents/readme-images/css-validation.png)
+
+### _Lighthouse Reports_
+
+#### _Desktop_
+
+ * index.html
+
+![Lighthouse Desktop](documents/readme-images/lighthouse-desktop.png)
+
+#### _Mobile_
+
+ * index.html
+
+![Lighthouse Mobile](documents/readme-images/lighthouse-mobile.png)
+
+# _Deployment_
+
+## _Version Control_
+
+ * From the Gitpod terminal use "git add ." which tells git you would like to make changes/updates to the files.
+
+ * Then use "git commit -m " with a comment, this will commit the changes and update the files.
+
+ * Then using the "git push" command this will push the committed changes to your GitHub repository.
+
+## _Page Deployment_
+
+ * Load up the GitHub website and log in to your account
+ 
+ * Select and open the repository to be published.
+
+ * Click on the settings within this repository and scroll down and open the pages section.
+
+ * Under the build and deployment section within pages put the source to display a branch, select the branch to main and the folder to root, and hit the save button.
+
+ * Then select the visit site button at the top to view the live deployment of the site.
+
+ Visit the live deployment of the site [HERE](https://a-croshaw.github.io/hi-low-game/).
+
+## _Cloning Repository_
+
+ * To clone the repository for download or use within your GitHub head-over to this link https://github.com/git-guides/git-clone
+
+# _Credits_
+
+## _Content and Media_
+
+ *  The image used for the back of the card was taken from [Pixabay](https://pixabay.com/illustrations/ai-generated-baby-dragon-cute-7705365/) and is free licensed under the Pixabay licensing condtions.
+
+ * The image used fro the background of the game are is from [Wallpapers.com](https://wallpapers.com/wallpapers/blue-and-red-fire-j9nfqyrlnhxznmh5.html) with under there licensing the image is only for personal use. As this is a personal and project for education perpose this image can not be published out side of this scope.
+
+## _Code_
+
+ * For the font style's Prata and Slabo, These are from [Google-Fonts](https://fonts.google.com/).
+ 
+ * The Favicon code and image icon rendering was produced using [favicon.io](https://favicon.io/).
+
+ * The social media icons used, are provided by [Font Awesome](https://fontawesome.com/).
+ 
+ * The use of the [Web Dev Simplified](https://www.youtube.com/watch?v=NxRwIZWjLtE) YouTube tutorials was used to help code the card deck. 
+
+ * For the understanding and coding HTML, CSS and Javascript [W3Schools](https://www.w3schools.com/js/default.asp) also [Stack Overflow](https://stackoverflow.com/tags)and was used.
+
+ * The 
+
+ * For the understanding and css code for aligning flexbox [flexboxfroggy](https://flexboxfroggy.com/) was used.
+
+ * To create the screen mockup i used [techsini.com](https://techsini.com/multi-mockup/index.php).
