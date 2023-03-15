@@ -1,6 +1,7 @@
 # _HI LOW GAME _
 
-![Mock-up-Image](documents/readme-images/)
+![Mock-up-Image](documents/readme-images/Mock-Up.png)
+
 [__Click here to view published site__](https://a-croshaw.github.io/hi-low-game/)
 
 
@@ -187,16 +188,15 @@ These features are across all of the pages, giving a basic structure that gives 
 
 ## _Accessibility_
 
- * All page had their accessibility checked using [Wave](https://wave.webaim.org/)
+ * The page accessibility was checked using [Wave](https://wave.webaim.org/)
 
- * Index.html has one alert for the missing audio transcript.
+ * Index.html has one alert for saying text maybe a heading when it was not.
+ 
+ * All links have proper aria labels.
 
- * All other pages and areas passed the accessibility tests.
-    * All links have proper aria labels.
-    * All images have proper alt tags and none are the same.
-    * There is no conflicts with the contrast of colours.
+* There is no conflicts with the contrast of colours.
 
-![index-wave](documents/readme-images/index-wave.png)
+![index-wave](documents/readme-images/wave-check.png)
 
 ## _Validation_
 
@@ -204,7 +204,7 @@ These features are across all of the pages, giving a basic structure that gives 
 
 * The HTML on all pages passed through the [W3C validator](https://validator.w3.org/) without any errors.
 
-![HTML validation](documents/readme-images/index-validation.png)
+![HTML validation](documents/readme-images/HTML-validation.png)
 
 ### _CSS Validation_
 
