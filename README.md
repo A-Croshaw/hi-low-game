@@ -85,6 +85,7 @@ The elements to this feature game are as followed:
  * All the buttons through the game have the same style.
  * They are a beep blue color #04033b and when hovered over change to a lighter blue #06056d.
  * They all consist of yellow text #ffe600.
+ * They all have the font "Bad Script" that is imported from Google fonts.
  * They all consist of a sold yellow border #faf761.
  * They all have all have two coners rounded.
 
@@ -117,9 +118,39 @@ The elements to this feature game are as followed:
 ![Hi and Low Buttons](documents/readme-images/Buttons-4.png)
 
 ### _6 - Scores_
+
+ * The scores are to the right top side of the game area.
+ * With the background as a lightly transparent yellow #ffee00b2.
+ * The text has a font of 'Rampart One' which is imported from google fonts.
+
+![Scores](documents/readme-images/Scores-2.png)
+
 ### _7 - Game Text_
+* The Game test area is placed above the card in the middle of the game area.
+* The Text has the font "Bad Script" that is imported from Google fonts.
+* With the background as a lightly transparent yellow #ffee00b2.
+
+![Game Text](documents/readme-images/Game-text.png)
+
 ### _8 - Cards_
+
+ * The cards are static with the back displaying a little dragon.
+ * Once the cards Turn they will minic the design of a normal deck of cards with the exception of the 
+    king, queen and jack which dont show the pictures just the letters.
+
+![Cards](documents/readme-images/Cards.png)
+
 ### _9 - Information Window_
+
+* The information window is displayed as soon as the game is loaded.
+* The Text has the font "Bad Script" that is imported from Google fonts.
+* The text color is yellow #f8df00.
+* With the background as a lightly transparent black #000000c4.
+* The "how to play" and "game rules" buttons toggle between to sets of information within the same window"
+
+![Information Window](documents/readme-images/Information-Window.png)
+![Information Window](documents/readme-images/Information-Window-2.png)
+
 ### _10 - Favicon_
 
  * 
@@ -128,14 +159,6 @@ The elements to this feature game are as followed:
 
 
 ## _404 Page_
-
- * This 404 page will be reached when a bad link or a miss-typed web address is loaded by the user.
-
- * It consists of the top header and navigation bar with logos so the user can navigate back to the website more easily.
-
- * Also there is a link in the word here within the text that will take the user back to the home page.
-
- * This is all so the user does not have to use the back button on the browser or type the URL to return to the site.
 
 ![404 Image](documents/readme-images/)
 
