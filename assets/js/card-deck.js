@@ -1,15 +1,24 @@
+//The use of the [Web Dev Simplified](https://www.youtube.com/watch?v=NxRwIZWjLtE) 
+//YouTube tutorials was used to help code the card deck.
+
+//global variables to hold card suits and values
 let cardValue = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
 let suit = ["♠", "♣", "♥", "♦"];
 
+/**
+ * creats a new deck and allows it to be exported to script.js
+ */
 export default class newDeck {
   constructor(cards = creatDeck()) {
     this.cards = cards;
   }
-
+  // returns deck lengh
   get deckSize() {
     return this.cards.length;
   }
-
+  /**
+   * suffles the deck using math.random moving card indexs 100 times 
+   */
   shuffle() {
     for (let s = 0; s < 100; s++) {
       for (let i = this.deckSize; i > 0; i--) {
@@ -23,6 +32,10 @@ export default class newDeck {
   }
 }
 
+/**
+ * creats a new card class
+ * creats a new card 
+ */
 class newCard {
   constructor(suit, value) {
     this.suit = suit;
@@ -42,6 +55,10 @@ class newCard {
   }
 }
 
+/**
+ * creats a new deck 
+ * @returns 
+ */
 function creatDeck() {
   return suit.flatMap(suit => {
     return cardValue.map(value => {
