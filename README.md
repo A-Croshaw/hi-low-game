@@ -4,6 +4,15 @@
 
 [__Click here to view published site__](https://a-croshaw.github.io/hi-low-game/)
 
+This featured online game is a creation of a classic hi or low game.
+
+There are 13 cards for the user to determin whether they are higer or lower. 
+
+It has instructions that are seen by the user upon loading making it easy to understand how the game works 
+
+This game can be addictive for the user as they try to reach the final card but keep failing and unleashing there competitiveness and determination to win.
+From verious user that have tried the game through the testing have all said that game is addictve aswell.
+
 
 # _Content Menu_
 
@@ -53,7 +62,7 @@
 
 ## _Elements_
 
-The elements to this feature game are as followed:
+The elements to this feature online game are as followed:
 
 ### _1 - The Background_
 
