@@ -169,9 +169,13 @@ king, queen and jack which dont show the pictures just the letters.
 
 ### _11 - Favicon_
 
- * 
+* The favicon icon indicates to the user what the tab is when they have several tabs open.
 
-![Favicon](documents/readme-images/favicon.ico)
+ * The favicon icon used is the Cosbranok logo.
+
+![Favicon](documents/readme-images/favicon.ico) 
+
+
 
 
 ## _404 Page_
