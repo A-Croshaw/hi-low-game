@@ -32,9 +32,8 @@ From verious user that have tried the game through the testing have all said tha
         9. [Complete-game](#9---complete-game)
         10. [Information Window](#10---information-window)
         11. [Favicon](#11---favicon)
-    7. [404 Page](#404-page)
-    8. [Implemented Features](#implemented-features)
-    9. [Features to be Implemented](#features-to-be-implemented)
+    7. [Implemented Features](#implemented-features)
+    8. [Features to be Implemented](#features-to-be-implemented)
 2. [Design](#design)
 3. [Bugs](#bugs)
 4. [Testing](#testing)
@@ -175,13 +174,6 @@ king, queen and jack which dont show the pictures just the letters.
 
 ![Favicon](documents/readme-images/favicon.ico) 
 
-
-
-
-## _404 Page_
-
-![404 Image](documents/readme-images/)
-
 ## _Implemented Features_
  
  * The responsiveness of the site is 280px and up.
@@ -189,13 +181,12 @@ king, queen and jack which dont show the pictures just the letters.
  * Buttons that call different functions to operate the game.
  * Element to track a users higest score within that game session.
  (not linked to external storage to keep highest score from refreshing when page reloads).
- * 404 page to let the user know there is a broken link or a mistype in the URL.
- * 404 page has a navigation bar and also a link in content to return to the main content of the site. 
  
 ## _Features to be Implemented_
 
  * A second card game to give the user a choice of game eg 21. 
  * An extreme 52 card hi and low game that runs through the complete card deck.
+ * 404 page for easier access and userablity.
 
 # _Design_
  
@@ -332,6 +323,5 @@ king, queen and jack which dont show the pictures just the letters.
  * The social media icons used, are provided by [Font Awesome](https://fontawesome.com/).
  * The use of the [Web Dev Simplified](https://www.youtube.com/watch?v=NxRwIZWjLtE) YouTube tutorials was used to help code the card deck. 
  * For the understanding and coding HTML, CSS and Javascript [W3Schools](https://www.w3schools.com/js/default.asp) also [Stack Overflow](https://stackoverflow.com/tags)and was used.
- * The 
  * For the understanding and css code for aligning flexbox [flexboxfroggy](https://flexboxfroggy.com/) was used.
  * To create the screen mockup i used [techsini.com](https://techsini.com/multi-mockup/index.php).
